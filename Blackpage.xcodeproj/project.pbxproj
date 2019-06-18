@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15C522B8C6C500831E8C /* AppDelegate.swift */; };
-		930D15C822B8C6C500831E8C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 930D15C722B8C6C500831E8C /* GameScene.sks */; };
-		930D15CA22B8C6C500831E8C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 930D15C922B8C6C500831E8C /* Actions.sks */; };
 		930D15CC22B8C6C500831E8C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15CB22B8C6C500831E8C /* GameScene.swift */; };
 		930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15CD22B8C6C500831E8C /* GameViewController.swift */; };
 		930D15D122B8C6C500831E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930D15CF22B8C6C500831E8C /* Main.storyboard */; };
@@ -17,6 +15,8 @@
 		930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930D15D422B8C6C600831E8C /* LaunchScreen.storyboard */; };
 		930D15E122B8C6C600831E8C /* BlackpageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15E022B8C6C600831E8C /* BlackpageTests.swift */; };
 		930D15EC22B8C6C600831E8C /* BlackpageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15EB22B8C6C600831E8C /* BlackpageUITests.swift */; };
+		930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */; };
+		93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B3D722B8D69A00959C99 /* SplashScreen.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 /* Begin PBXFileReference section */
 		930D15C222B8C6C500831E8C /* Blackpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930D15C522B8C6C500831E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		930D15C722B8C6C500831E8C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		930D15C922B8C6C500831E8C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		930D15CB22B8C6C500831E8C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		930D15CD22B8C6C500831E8C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		930D15D022B8C6C500831E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +51,8 @@
 		930D15E722B8C6C600831E8C /* BlackpageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlackpageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		930D15EB22B8C6C600831E8C /* BlackpageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackpageUITests.swift; sourceTree = "<group>"; };
 		930D15ED22B8C6C600831E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror_ambience.mp3; sourceTree = "<group>"; };
+		93F6B3D722B8D69A00959C99 /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +103,9 @@
 		930D15C422B8C6C500831E8C /* Blackpage */ = {
 			isa = PBXGroup;
 			children = (
+				930D15F922B8CBB800831E8C /* sound */,
+				93F6B3D722B8D69A00959C99 /* SplashScreen.sks */,
 				930D15C522B8C6C500831E8C /* AppDelegate.swift */,
-				930D15C722B8C6C500831E8C /* GameScene.sks */,
-				930D15C922B8C6C500831E8C /* Actions.sks */,
 				930D15CB22B8C6C500831E8C /* GameScene.swift */,
 				930D15CD22B8C6C500831E8C /* GameViewController.swift */,
 				930D15CF22B8C6C500831E8C /* Main.storyboard */,
@@ -132,6 +132,14 @@
 				930D15ED22B8C6C600831E8C /* Info.plist */,
 			);
 			path = BlackpageUITests;
+			sourceTree = "<group>";
+		};
+		930D15F922B8CBB800831E8C /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */,
+			);
+			path = sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,10 +247,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
-				930D15C822B8C6C500831E8C /* GameScene.sks in Resources */,
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
-				930D15CA22B8C6C500831E8C /* Actions.sks in Resources */,
+				930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */,
+				93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
