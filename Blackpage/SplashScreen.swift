@@ -96,11 +96,13 @@ class SplashScreen: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in touches {
+      for touch in touches {
             let touchLocation : CGPoint = touch.location(in: self)
             if startButton?.contains(touchLocation) ?? false {
-                print("startButton is pressed")
+                //self.scene?.view?.presentScene(SKScene.init(fileNamed: "OpeningScene")!, transition: SKTransition.fade(withDuration: 3.0))
             }
+
         }
+        
     }
 }
