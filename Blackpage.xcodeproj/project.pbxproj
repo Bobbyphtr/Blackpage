@@ -28,7 +28,6 @@
 		E3E43E9522BCD0D600665671 /* SceneTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E8E22BCD0D600665671 /* SceneTwo.swift */; };
 		E3E43E9622BCD0D600665671 /* ControlInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */; };
 		E3E43E9722BCD0D600665671 /* CharacterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E9022BCD0D600665671 /* CharacterNode.swift */; };
-		E3E43E9822BCD0D600665671 /* ChangeSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E9122BCD0D600665671 /* ChangeSceneDelegate.swift */; };
 		E3E43E9922BCD0D600665671 /* SceneTwo.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3E43E9222BCD0D600665671 /* SceneTwo.sks */; };
 		E3E43E9F22BCD1B200665671 /* BedroomScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E9E22BCD1B200665671 /* BedroomScene.swift */; };
 		E3E43EA322BCD27A00665671 /* BedroomScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3E43EA222BCD27A00665671 /* BedroomScene.sks */; };
@@ -80,7 +79,6 @@
 		E3E43E8E22BCD0D600665671 /* SceneTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneTwo.swift; sourceTree = "<group>"; };
 		E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlInputDelegate.swift; sourceTree = "<group>"; };
 		E3E43E9022BCD0D600665671 /* CharacterNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterNode.swift; sourceTree = "<group>"; };
-		E3E43E9122BCD0D600665671 /* ChangeSceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeSceneDelegate.swift; sourceTree = "<group>"; };
 		E3E43E9222BCD0D600665671 /* SceneTwo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SceneTwo.sks; sourceTree = "<group>"; };
 		E3E43E9E22BCD1B200665671 /* BedroomScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomScene.swift; sourceTree = "<group>"; };
 		E3E43EA222BCD27A00665671 /* BedroomScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BedroomScene.sks; sourceTree = "<group>"; };
@@ -135,24 +133,15 @@
 		930D15C422B8C6C500831E8C /* Blackpage */ = {
 			isa = PBXGroup;
 			children = (
-				E3E43EA422BCD8CA00665671 /* ChangeSceneDelegate */,
+				9330A51D22BCE5A000363FFE /* Controllers */,
+				9330A51C22BCE4A700363FFE /* Scenes */,
 				E3E43E7D22BCD0A000665671 /* Actions */,
 				E3E43E8022BCD0A000665671 /* Components */,
 				E3E43E8422BCD0A000665671 /* StateMachine */,
 				930D15F922B8CBB800831E8C /* sound */,
 				930D15CD22B8C6C500831E8C /* GameViewController.swift */,
-				93F6B3D722B8D69A00959C99 /* SplashScreen.sks */,
-				930D15CB22B8C6C500831E8C /* SplashScreen.swift */,
-				E3E43EA222BCD27A00665671 /* BedroomScene.sks */,
-				E3E43E9E22BCD1B200665671 /* BedroomScene.swift */,
-				E3E43E9222BCD0D600665671 /* SceneTwo.sks */,
-				E3E43E8E22BCD0D600665671 /* SceneTwo.swift */,
 				930D15C522B8C6C500831E8C /* AppDelegate.swift */,
 				930D15CF22B8C6C500831E8C /* Main.storyboard */,
-				E3E43E9122BCD0D600665671 /* ChangeSceneDelegate.swift */,
-				E3E43E9022BCD0D600665671 /* CharacterNode.swift */,
-				E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */,
-				E3E43E8D22BCD0D600665671 /* PhysicsDetection.swift */,
 				E3E43E8C22BCD0D500665671 /* TouchControlInputNode.swift */,
 				930D15D222B8C6C600831E8C /* Assets.xcassets */,
 				930D15D422B8C6C600831E8C /* LaunchScreen.storyboard */,
@@ -188,6 +177,46 @@
 			path = sound;
 			sourceTree = "<group>";
 		};
+		9330A51C22BCE4A700363FFE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				93F6B3D722B8D69A00959C99 /* SplashScreen.sks */,
+				E3E43EA222BCD27A00665671 /* BedroomScene.sks */,
+				E3E43E9222BCD0D600665671 /* SceneTwo.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9330A51D22BCE5A000363FFE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9330A51F22BCE64300363FFE /* Character */,
+				9330A51E22BCE61900363FFE /* Delegates */,
+				930D15CB22B8C6C500831E8C /* SplashScreen.swift */,
+				E3E43E9E22BCD1B200665671 /* BedroomScene.swift */,
+				E3E43E8E22BCD0D600665671 /* SceneTwo.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9330A51E22BCE61900363FFE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E3E43EA522BCD8E900665671 /* ChangeSceneToStairsDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		9330A51F22BCE64300363FFE /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */,
+				E3E43E9022BCD0D600665671 /* CharacterNode.swift */,
+				E3E43E8D22BCD0D600665671 /* PhysicsDetection.swift */,
+			);
+			path = Character;
+			sourceTree = "<group>";
+		};
 		E3E43E7D22BCD0A000665671 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,14 +241,6 @@
 				E3E43E8522BCD0A000665671 /* NormalState.swift */,
 			);
 			path = StateMachine;
-			sourceTree = "<group>";
-		};
-		E3E43EA422BCD8CA00665671 /* ChangeSceneDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				E3E43EA522BCD8E900665671 /* ChangeSceneToStairsDelegate.swift */,
-			);
-			path = ChangeSceneDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,7 +389,6 @@
 				E3E43E9422BCD0D600665671 /* PhysicsDetection.swift in Sources */,
 				E3E43E8A22BCD0A000665671 /* PlayerControlComponent.swift in Sources */,
 				E3E43E9522BCD0D600665671 /* SceneTwo.swift in Sources */,
-				E3E43E9822BCD0D600665671 /* ChangeSceneDelegate.swift in Sources */,
 				930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */,
 				E3E43E9F22BCD1B200665671 /* BedroomScene.swift in Sources */,
 				E3E43E8B22BCD0A000665671 /* NormalState.swift in Sources */,
