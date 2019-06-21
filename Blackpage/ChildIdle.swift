@@ -8,6 +8,7 @@
 
 import SpriteKit
 class ChildIdle: SKScene {
+    
     var Anak = SKSpriteNode()
     var textureArray = [SKTexture]()
     
@@ -17,13 +18,19 @@ class ChildIdle: SKScene {
             textureArray.append(SKTexture(imageNamed: textureName))
         }
         
+        
         Anak = SKSpriteNode(imageNamed: "Group1")
         Anak.position = CGPoint.init(x: 260, y: -60)
         Anak.size = CGSize.init(width: 50, height: 150)
         Anak.zPosition = 1
         self.addChild(Anak)
         
+        
+        
         Anak.run(SKAction.repeatForever(SKAction.animate(with: textureArray, timePerFrame: 0.4)))
+        
+        
+        
     }
     
 //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

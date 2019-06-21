@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552995F822B8F24A00988EFD /* Scene2a.sks in Resources */ = {isa = PBXBuildFile; fileRef = 552995F722B8F24A00988EFD /* Scene2a.sks */; };
+		55094F4E22BB7023001907EF /* Scene1StairBawah.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55094F4D22BB7023001907EF /* Scene1StairBawah.sks */; };
+		55094F5022BB7078001907EF /* Scene1Stair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55094F4F22BB7078001907EF /* Scene1Stair.swift */; };
+		55094F5222BB708A001907EF /* Scene1StairBawah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55094F5122BB708A001907EF /* Scene1StairBawah.swift */; };
+		552EA55D22BCBF7500011855 /* Scene1FrontDoor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 552EA55C22BCBF7500011855 /* Scene1FrontDoor.sks */; };
 		5560097E22BA1DD800545238 /* Scene1ChildBed.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5560097D22BA1DD800545238 /* Scene1ChildBed.sks */; };
-		559B050522B8DFC700469D14 /* Scene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 559B050422B8DFC700469D14 /* Scene2.sks */; };
 		55AA971C22BA318A00A40AEB /* ChildIdle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AA971B22BA318A00A40AEB /* ChildIdle.swift */; };
+		55C0CC9722BA49190017DDB3 /* Scene1Stair.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55C0CC9622BA49190017DDB3 /* Scene1Stair.sks */; };
 		930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15C522B8C6C500831E8C /* AppDelegate.swift */; };
 		930D15C822B8C6C500831E8C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 930D15C722B8C6C500831E8C /* GameScene.sks */; };
 		930D15CA22B8C6C500831E8C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 930D15C922B8C6C500831E8C /* Actions.sks */; };
@@ -41,10 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		552995F722B8F24A00988EFD /* Scene2a.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene2a.sks; sourceTree = "<group>"; };
+		55094F4D22BB7023001907EF /* Scene1StairBawah.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene1StairBawah.sks; sourceTree = "<group>"; };
+		55094F4F22BB7078001907EF /* Scene1Stair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene1Stair.swift; sourceTree = "<group>"; };
+		55094F5122BB708A001907EF /* Scene1StairBawah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene1StairBawah.swift; sourceTree = "<group>"; };
+		552EA55C22BCBF7500011855 /* Scene1FrontDoor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene1FrontDoor.sks; sourceTree = "<group>"; };
 		5560097D22BA1DD800545238 /* Scene1ChildBed.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene1ChildBed.sks; sourceTree = "<group>"; };
-		559B050422B8DFC700469D14 /* Scene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene2.sks; sourceTree = "<group>"; };
 		55AA971B22BA318A00A40AEB /* ChildIdle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildIdle.swift; sourceTree = "<group>"; };
+		55C0CC9622BA49190017DDB3 /* Scene1Stair.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene1Stair.sks; sourceTree = "<group>"; };
 		930D15C222B8C6C500831E8C /* Blackpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930D15C522B8C6C500831E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		930D15C722B8C6C500831E8C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -114,16 +120,19 @@
 				930D15C522B8C6C500831E8C /* AppDelegate.swift */,
 				930D15C722B8C6C500831E8C /* GameScene.sks */,
 				930D15C922B8C6C500831E8C /* Actions.sks */,
-				552995F722B8F24A00988EFD /* Scene2a.sks */,
 				930D15CB22B8C6C500831E8C /* GameScene.swift */,
 				930D15CD22B8C6C500831E8C /* GameViewController.swift */,
 				930D15CF22B8C6C500831E8C /* Main.storyboard */,
 				930D15D222B8C6C600831E8C /* Assets.xcassets */,
 				930D15D422B8C6C600831E8C /* LaunchScreen.storyboard */,
 				930D15D722B8C6C600831E8C /* Info.plist */,
-				559B050422B8DFC700469D14 /* Scene2.sks */,
+				55C0CC9622BA49190017DDB3 /* Scene1Stair.sks */,
+				55094F4F22BB7078001907EF /* Scene1Stair.swift */,
+				55094F5122BB708A001907EF /* Scene1StairBawah.swift */,
+				55094F4D22BB7023001907EF /* Scene1StairBawah.sks */,
 				5560097D22BA1DD800545238 /* Scene1ChildBed.sks */,
 				55AA971B22BA318A00A40AEB /* ChildIdle.swift */,
+				552EA55C22BCBF7500011855 /* Scene1FrontDoor.sks */,
 			);
 			path = Blackpage;
 			sourceTree = "<group>";
@@ -250,13 +259,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55094F4E22BB7023001907EF /* Scene1StairBawah.sks in Resources */,
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
 				930D15C822B8C6C500831E8C /* GameScene.sks in Resources */,
-				552995F822B8F24A00988EFD /* Scene2a.sks in Resources */,
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
-				559B050522B8DFC700469D14 /* Scene2.sks in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
 				930D15CA22B8C6C500831E8C /* Actions.sks in Resources */,
+				55C0CC9722BA49190017DDB3 /* Scene1Stair.sks in Resources */,
+				552EA55D22BCBF7500011855 /* Scene1FrontDoor.sks in Resources */,
 				5560097E22BA1DD800545238 /* Scene1ChildBed.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55AA971C22BA318A00A40AEB /* ChildIdle.swift in Sources */,
+				55094F5022BB7078001907EF /* Scene1Stair.swift in Sources */,
+				55094F5222BB708A001907EF /* Scene1StairBawah.swift in Sources */,
 				930D15CC22B8C6C500831E8C /* GameScene.swift in Sources */,
 				930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */,
 				930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */,
