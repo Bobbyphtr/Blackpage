@@ -15,6 +15,19 @@
 		E303D04222BB6AA40097FBA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E303D04022BB6AA40097FBA3 /* Main.storyboard */; };
 		E303D04422BB6AA60097FBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E303D04322BB6AA60097FBA3 /* Assets.xcassets */; };
 		E303D04722BB6AA60097FBA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E303D04522BB6AA60097FBA3 /* LaunchScreen.storyboard */; };
+		E303D04F22BB6EA10097FBA3 /* TouchControlInputNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303D04E22BB6EA10097FBA3 /* TouchControlInputNode.swift */; };
+		E303D05122BB83240097FBA3 /* ControlInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303D05022BB83240097FBA3 /* ControlInputDelegate.swift */; };
+		E303D05322BB85000097FBA3 /* CharacterNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303D05222BB85000097FBA3 /* CharacterNode.swift */; };
+		E303D05822BB85790097FBA3 /* NormalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303D05722BB85790097FBA3 /* NormalState.swift */; };
+		E303D05A22BBC91D0097FBA3 /* PlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E303D05922BBC91D0097FBA3 /* PlayerControlComponent.swift */; };
+		E303D05C22BBF41F0097FBA3 /* PlayerActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E303D05B22BBF41F0097FBA3 /* PlayerActions.sks */; };
+		E303D05E22BBF4AA0097FBA3 /* PreviewScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E303D05D22BBF4AA0097FBA3 /* PreviewScene.sks */; };
+		E32A6D1B22BC20C000C0226D /* SceneTwo.sks in Resources */ = {isa = PBXBuildFile; fileRef = E32A6D1A22BC20C000C0226D /* SceneTwo.sks */; };
+		E32A6D1D22BC20CD00C0226D /* SceneTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A6D1C22BC20CD00C0226D /* SceneTwo.swift */; };
+		E32A6D2122BC320000C0226D /* ChangeSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A6D2022BC320000C0226D /* ChangeSceneDelegate.swift */; };
+		E32A6D2322BCBBEE00C0226D /* TestGan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32A6D2222BCBBEE00C0226D /* TestGan.swift */; };
+		E3C6C63522BBF6590032DEAE /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6C63422BBF6590032DEAE /* AnimationComponent.swift */; };
+		E3C6C63722BBFC410032DEAE /* PhysicsDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6C63622BBFC410032DEAE /* PhysicsDetection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		E303D04322BB6AA60097FBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E303D04622BB6AA60097FBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E303D04822BB6AA60097FBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E303D04E22BB6EA10097FBA3 /* TouchControlInputNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchControlInputNode.swift; sourceTree = "<group>"; };
+		E303D05022BB83240097FBA3 /* ControlInputDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlInputDelegate.swift; sourceTree = "<group>"; };
+		E303D05222BB85000097FBA3 /* CharacterNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterNode.swift; sourceTree = "<group>"; };
+		E303D05722BB85790097FBA3 /* NormalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalState.swift; sourceTree = "<group>"; };
+		E303D05922BBC91D0097FBA3 /* PlayerControlComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlComponent.swift; sourceTree = "<group>"; };
+		E303D05B22BBF41F0097FBA3 /* PlayerActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerActions.sks; sourceTree = "<group>"; };
+		E303D05D22BBF4AA0097FBA3 /* PreviewScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PreviewScene.sks; sourceTree = "<group>"; };
+		E32A6D1A22BC20C000C0226D /* SceneTwo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SceneTwo.sks; sourceTree = "<group>"; };
+		E32A6D1C22BC20CD00C0226D /* SceneTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneTwo.swift; sourceTree = "<group>"; };
+		E32A6D2022BC320000C0226D /* ChangeSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneDelegate.swift; sourceTree = "<group>"; };
+		E32A6D2222BCBBEE00C0226D /* TestGan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGan.swift; sourceTree = "<group>"; };
+		E3C6C63422BBF6590032DEAE /* AnimationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
+		E3C6C63622BBFC410032DEAE /* PhysicsDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsDetection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,9 @@
 		E303D03522BB6AA40097FBA3 /* Blackpage98 */ = {
 			isa = PBXGroup;
 			children = (
+				E303D05622BB85370097FBA3 /* StateMachine */,
+				E303D05522BB85230097FBA3 /* Actions */,
+				E303D05422BB851A0097FBA3 /* Components */,
 				E303D03622BB6AA40097FBA3 /* AppDelegate.swift */,
 				E303D03822BB6AA40097FBA3 /* GameScene.sks */,
 				E303D03A22BB6AA40097FBA3 /* Actions.sks */,
@@ -69,8 +98,42 @@
 				E303D04322BB6AA60097FBA3 /* Assets.xcassets */,
 				E303D04522BB6AA60097FBA3 /* LaunchScreen.storyboard */,
 				E303D04822BB6AA60097FBA3 /* Info.plist */,
+				E303D04E22BB6EA10097FBA3 /* TouchControlInputNode.swift */,
+				E303D05022BB83240097FBA3 /* ControlInputDelegate.swift */,
+				E303D05222BB85000097FBA3 /* CharacterNode.swift */,
+				E3C6C63622BBFC410032DEAE /* PhysicsDetection.swift */,
+				E32A6D1A22BC20C000C0226D /* SceneTwo.sks */,
+				E32A6D1C22BC20CD00C0226D /* SceneTwo.swift */,
+				E32A6D2022BC320000C0226D /* ChangeSceneDelegate.swift */,
 			);
 			path = Blackpage98;
+			sourceTree = "<group>";
+		};
+		E303D05422BB851A0097FBA3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E303D05922BBC91D0097FBA3 /* PlayerControlComponent.swift */,
+				E3C6C63422BBF6590032DEAE /* AnimationComponent.swift */,
+				E32A6D2222BCBBEE00C0226D /* TestGan.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E303D05522BB85230097FBA3 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				E303D05B22BBF41F0097FBA3 /* PlayerActions.sks */,
+				E303D05D22BBF4AA0097FBA3 /* PreviewScene.sks */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		E303D05622BB85370097FBA3 /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				E303D05722BB85790097FBA3 /* NormalState.swift */,
+			);
+			path = StateMachine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +197,10 @@
 				E303D04222BB6AA40097FBA3 /* Main.storyboard in Resources */,
 				E303D03922BB6AA40097FBA3 /* GameScene.sks in Resources */,
 				E303D04422BB6AA60097FBA3 /* Assets.xcassets in Resources */,
+				E32A6D1B22BC20C000C0226D /* SceneTwo.sks in Resources */,
 				E303D04722BB6AA60097FBA3 /* LaunchScreen.storyboard in Resources */,
+				E303D05E22BBF4AA0097FBA3 /* PreviewScene.sks in Resources */,
+				E303D05C22BBF41F0097FBA3 /* PlayerActions.sks in Resources */,
 				E303D03B22BB6AA40097FBA3 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +212,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E303D05A22BBC91D0097FBA3 /* PlayerControlComponent.swift in Sources */,
+				E303D04F22BB6EA10097FBA3 /* TouchControlInputNode.swift in Sources */,
+				E303D05322BB85000097FBA3 /* CharacterNode.swift in Sources */,
+				E3C6C63522BBF6590032DEAE /* AnimationComponent.swift in Sources */,
 				E303D03D22BB6AA40097FBA3 /* GameScene.swift in Sources */,
+				E32A6D1D22BC20CD00C0226D /* SceneTwo.swift in Sources */,
+				E32A6D2122BC320000C0226D /* ChangeSceneDelegate.swift in Sources */,
+				E32A6D2322BCBBEE00C0226D /* TestGan.swift in Sources */,
+				E3C6C63722BBFC410032DEAE /* PhysicsDetection.swift in Sources */,
 				E303D03F22BB6AA40097FBA3 /* GameViewController.swift in Sources */,
 				E303D03722BB6AA40097FBA3 /* AppDelegate.swift in Sources */,
+				E303D05822BB85790097FBA3 /* NormalState.swift in Sources */,
+				E303D05122BB83240097FBA3 /* ControlInputDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

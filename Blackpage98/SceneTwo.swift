@@ -9,19 +9,14 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene, ChangeSceneDelegate {
+class SceneTwo: SKScene {
     
-    func changeScene(to scene: SKScene) {
-        scene.scaleMode = .aspectFill
-        self.view?.presentScene(scene)
-    }
-    
+
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
-    var physicsDelegate = PhysicsDetection()
     var player: CharacterNode?
-
+    
     
     private var lastUpdateTime : TimeInterval = 0
     
@@ -30,30 +25,28 @@ class GameScene: SKScene, ChangeSceneDelegate {
         self.lastUpdateTime = 0
         
     }
-
+    
     
     override func didMove(to view: SKView) {
         
         //jika ada childnode(entity?) "Player", jalankan fungsi setupcontrols dari playercontrolcomponent.
         
-        
-        if let thePlayer = childNode(withName: "Player"){
+        if let thePlayer = childNode(withName: "Player2"){
             
-            
+            print("scene 2")
             player = thePlayer as? CharacterNode
             if(player != nil) {
+                print("setup machine 2")
                 player?.setUpStateMachine(scene: self)
-                player?.changeScene = self
             }
             
             // memasukkan logika gerak (state)
             //            (thePlayer as! CharacterNode).setUpStateMachine()
             if let pcComponent = thePlayer.entity?.component(ofType: PlayerControlComponent.self){
+                print("setupcontrol")
                 pcComponent.setupControls(camera: camera!, scene: self)
             }
         }
-        
-        self.physicsWorld.contactDelegate = physicsDelegate
     }
     
     //    func centerOnNode(node: SKNode) {
