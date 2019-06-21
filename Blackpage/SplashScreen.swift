@@ -55,6 +55,7 @@ class SplashScreen: SKScene {
     func fadeInFadeOutLabelIntro() -> Void {
         labelIntro.run(SKAction.fadeAlpha(to: 1, duration: 3)) {
             self.labelIntro.run(SKAction.fadeAlpha(to: 0, duration: 3),completion: {
+                self.labelIntro.removeFromParent()
                 self.viewSplashScreen()
             })
         }
