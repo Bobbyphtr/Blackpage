@@ -24,7 +24,7 @@ class Scene1Stair: SKScene {
             for touch in touches {
                 let touchLocation:CGPoint = touch.location(in: self)
                 if tanggaTouch.contains(touchLocation){
-                    let sceneTanggaBawah = Scene1StairBawah(fileNamed: "Scene1StairBawah")
+                    let sceneTanggaBawah = GameScene(fileNamed: "Scene1StairBawah")
                     sceneTanggaBawah?.scaleMode = .aspectFill
                     self.view?.presentScene(sceneTanggaBawah!, transition: SKTransition.fade(withDuration: 0.5))
 
