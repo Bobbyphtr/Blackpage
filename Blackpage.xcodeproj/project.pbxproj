@@ -19,7 +19,6 @@
 		939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939B432E22BA4AE90059C54D /* bg_sound.mp3 */; };
 		93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B3D722B8D69A00959C99 /* SplashScreen.sks */; };
 		E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3E43E7E22BCD0A000665671 /* PlayerActions.sks */; };
-		E3E43E8722BCD0A000665671 /* PreviewScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3E43E7F22BCD0A000665671 /* PreviewScene.sks */; };
 		E3E43E8922BCD0A000665671 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E8222BCD0A000665671 /* AnimationComponent.swift */; };
 		E3E43E8A22BCD0A000665671 /* PlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E8322BCD0A000665671 /* PlayerControlComponent.swift */; };
 		E3E43E8B22BCD0A000665671 /* NormalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E8522BCD0A000665671 /* NormalState.swift */; };
@@ -70,7 +69,6 @@
 		939B432E22BA4AE90059C54D /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
 		93F6B3D722B8D69A00959C99 /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
 		E3E43E7E22BCD0A000665671 /* PlayerActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerActions.sks; sourceTree = "<group>"; };
-		E3E43E7F22BCD0A000665671 /* PreviewScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PreviewScene.sks; sourceTree = "<group>"; };
 		E3E43E8222BCD0A000665671 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
 		E3E43E8322BCD0A000665671 /* PlayerControlComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerControlComponent.swift; sourceTree = "<group>"; };
 		E3E43E8522BCD0A000665671 /* NormalState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalState.swift; sourceTree = "<group>"; };
@@ -135,14 +133,10 @@
 			children = (
 				9330A51D22BCE5A000363FFE /* Controllers */,
 				9330A51C22BCE4A700363FFE /* Scenes */,
-				E3E43E7D22BCD0A000665671 /* Actions */,
-				E3E43E8022BCD0A000665671 /* Components */,
-				E3E43E8422BCD0A000665671 /* StateMachine */,
 				930D15F922B8CBB800831E8C /* sound */,
 				930D15CD22B8C6C500831E8C /* GameViewController.swift */,
 				930D15C522B8C6C500831E8C /* AppDelegate.swift */,
 				930D15CF22B8C6C500831E8C /* Main.storyboard */,
-				E3E43E8C22BCD0D500665671 /* TouchControlInputNode.swift */,
 				930D15D222B8C6C600831E8C /* Assets.xcassets */,
 				930D15D422B8C6C600831E8C /* LaunchScreen.storyboard */,
 				930D15D722B8C6C600831E8C /* Info.plist */,
@@ -192,6 +186,7 @@
 			children = (
 				9330A51F22BCE64300363FFE /* Character */,
 				9330A51E22BCE61900363FFE /* Delegates */,
+				E3E43E8C22BCD0D500665671 /* TouchControlInputNode.swift */,
 				930D15CB22B8C6C500831E8C /* SplashScreen.swift */,
 				E3E43E9E22BCD1B200665671 /* BedroomScene.swift */,
 				E3E43E8E22BCD0D600665671 /* SceneTwo.swift */,
@@ -210,20 +205,14 @@
 		9330A51F22BCE64300363FFE /* Character */ = {
 			isa = PBXGroup;
 			children = (
+				E3E43E8022BCD0A000665671 /* Components */,
+				E3E43E8422BCD0A000665671 /* StateMachine */,
 				E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */,
 				E3E43E9022BCD0D600665671 /* CharacterNode.swift */,
 				E3E43E8D22BCD0D600665671 /* PhysicsDetection.swift */,
+				E3E43E7E22BCD0A000665671 /* PlayerActions.sks */,
 			);
 			path = Character;
-			sourceTree = "<group>";
-		};
-		E3E43E7D22BCD0A000665671 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-				E3E43E7E22BCD0A000665671 /* PlayerActions.sks */,
-				E3E43E7F22BCD0A000665671 /* PreviewScene.sks */,
-			);
-			path = Actions;
 			sourceTree = "<group>";
 		};
 		E3E43E8022BCD0A000665671 /* Components */ = {
@@ -356,7 +345,6 @@
 				930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */,
 				E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */,
 				93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */,
-				E3E43E8722BCD0A000665671 /* PreviewScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
