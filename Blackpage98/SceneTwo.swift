@@ -42,7 +42,7 @@ class SceneTwo: SKScene {
             
             // memasukkan logika gerak (state)
             //            (thePlayer as! CharacterNode).setUpStateMachine()
-            if let pcComponent = thePlayer.entity?.component(ofType: TestGan.self){
+            if let pcComponent = thePlayer.entity?.component(ofType: PlayerControlComponent.self){
                 print("setupcontrol")
                 pcComponent.setupControls(camera: camera!, scene: self)
             }
