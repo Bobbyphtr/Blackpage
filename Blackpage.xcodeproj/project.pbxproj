@@ -16,6 +16,8 @@
 		930D15E122B8C6C600831E8C /* BlackpageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15E022B8C6C600831E8C /* BlackpageTests.swift */; };
 		930D15EC22B8C6C600831E8C /* BlackpageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15EB22B8C6C600831E8C /* BlackpageUITests.swift */; };
 		930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */; };
+		934785E322BCF872007C1D49 /* Backdoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934785E222BCF872007C1D49 /* Backdoor.swift */; };
+		93766A6022BCEA1D0023B5D9 /* Backdoor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93766A5F22BCEA1D0023B5D9 /* Backdoor.sks */; };
 		939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939B432E22BA4AE90059C54D /* bg_sound.mp3 */; };
 		93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B3D722B8D69A00959C99 /* SplashScreen.sks */; };
 		E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3E43E7E22BCD0A000665671 /* PlayerActions.sks */; };
@@ -66,6 +68,8 @@
 		930D15EB22B8C6C600831E8C /* BlackpageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackpageUITests.swift; sourceTree = "<group>"; };
 		930D15ED22B8C6C600831E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror_ambience.mp3; sourceTree = "<group>"; };
+		934785E222BCF872007C1D49 /* Backdoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdoor.swift; sourceTree = "<group>"; };
+		93766A5F22BCEA1D0023B5D9 /* Backdoor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Backdoor.sks; sourceTree = "<group>"; };
 		939B432E22BA4AE90059C54D /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
 		93F6B3D722B8D69A00959C99 /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
 		E3E43E7E22BCD0A000665671 /* PlayerActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerActions.sks; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 				93F6B3D722B8D69A00959C99 /* SplashScreen.sks */,
 				E3E43EA222BCD27A00665671 /* BedroomScene.sks */,
 				E3E43E9222BCD0D600665671 /* SceneTwo.sks */,
+				93766A5F22BCEA1D0023B5D9 /* Backdoor.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 				930D15CB22B8C6C500831E8C /* SplashScreen.swift */,
 				E3E43E9E22BCD1B200665671 /* BedroomScene.swift */,
 				E3E43E8E22BCD0D600665671 /* SceneTwo.swift */,
+				934785E222BCF872007C1D49 /* Backdoor.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */,
 				E3E43E9922BCD0D600665671 /* SceneTwo.sks in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
+				93766A6022BCEA1D0023B5D9 /* Backdoor.sks in Resources */,
 				930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */,
 				E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */,
 				93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */,
@@ -371,6 +378,7 @@
 			files = (
 				930D15CC22B8C6C500831E8C /* SplashScreen.swift in Sources */,
 				E3E43E9722BCD0D600665671 /* CharacterNode.swift in Sources */,
+				934785E322BCF872007C1D49 /* Backdoor.swift in Sources */,
 				E3E43E9322BCD0D600665671 /* TouchControlInputNode.swift in Sources */,
 				E3E43EA622BCD8E900665671 /* ChangeSceneToStairsDelegate.swift in Sources */,
 				E3E43E8922BCD0A000665671 /* AnimationComponent.swift in Sources */,
