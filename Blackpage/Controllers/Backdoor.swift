@@ -12,6 +12,7 @@ import GameplayKit
 class Backdoor: SKScene {
     
     private var bg:SKSpriteNode?
+    private var player : CharacterNode?
     
     let ambienceSound = SKAudioNode(fileNamed: "bg_sound.mp3")
     
@@ -20,6 +21,19 @@ class Backdoor: SKScene {
         initiateComponents()
         bg?.alpha = 1
         
+        if let thePlayer = childNode(withName: "Player"){
+            player = thePlayer as? CharacterNode
+            if(player != nil) {
+                player?.setUpStateMachine(scene: self)
+                
+            }
+            
+            // memasukkan logika gerak (state)
+            //            (thePlayer as! CharacterNode).setUpStateMachine()
+            if let pcComponent = thePlayer.entity?.component(ofType: PlayerControlComponent.self){
+                pcComponent.setupControls(camera: camera!, scene: self)
+            }
+        }
         
     }
     
