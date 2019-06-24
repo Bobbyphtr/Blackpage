@@ -24,7 +24,7 @@ class EndingScene: SKScene {
     }
     
     func initiateComponents(){
-        
+        //init
     }
     
     override func update(_ currentTime: TimeInterval) {

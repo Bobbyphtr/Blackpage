@@ -111,7 +111,7 @@ class SplashScreen: SKScene {
             if !isButtonPressed {
                 if startButton?.contains(touchLocation) ?? false {
                     isButtonPressed = true
-                    buttonPressedAction()
+                    buttonPressedAction() 
 
                 } else if continueButton?.contains(touchLocation) ?? false {
                     isButtonPressed = true
