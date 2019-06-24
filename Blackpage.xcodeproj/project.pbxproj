@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55CEE96C22C0B78400A65F2A /* StairScene2.sks */; };
 		55CEE96F22C0B79900A65F2A /* StairScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CEE96E22C0B79900A65F2A /* StairScene2.swift */; };
-		55CEE97322C0C07100A65F2A /* step_stair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 55CEE97222C0C07100A65F2A /* step_stair.mp3 */; };
 		930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15C522B8C6C500831E8C /* AppDelegate.swift */; };
 		930D15CC22B8C6C500831E8C /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15CB22B8C6C500831E8C /* SplashScreen.swift */; };
 		930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15CD22B8C6C500831E8C /* GameViewController.swift */; };
@@ -21,6 +20,7 @@
 		930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */; };
 		939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939B432E22BA4AE90059C54D /* bg_sound.mp3 */; };
 		93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B3D722B8D69A00959C99 /* SplashScreen.sks */; };
+		93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93FC312122C0C5B300D3C92D /* step_stair.mp3 */; };
 		E3CB8ABF22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */; };
 		E3CB8AC122C088CD0049DBE8 /* StairScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8AC022C088CD0049DBE8 /* StairScene.swift */; };
 		E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3CB8AC222C088E40049DBE8 /* StairScene.sks */; };
@@ -67,7 +67,6 @@
 /* Begin PBXFileReference section */
 		55CEE96C22C0B78400A65F2A /* StairScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene2.sks; sourceTree = "<group>"; };
 		55CEE96E22C0B79900A65F2A /* StairScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene2.swift; sourceTree = "<group>"; };
-		55CEE97222C0C07100A65F2A /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = step_stair.mp3; path = "../../../../Dropbox (DeveloperAcademy-ID)/Tom Folder/sound/step_stair.mp3"; sourceTree = "<group>"; };
 		930D15C222B8C6C500831E8C /* Blackpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930D15C522B8C6C500831E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		930D15CB22B8C6C500831E8C /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -85,6 +84,7 @@
 		930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror_ambience.mp3; sourceTree = "<group>"; };
 		939B432E22BA4AE90059C54D /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
 		93F6B3D722B8D69A00959C99 /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
+		93FC312122C0C5B300D3C92D /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_stair.mp3; sourceTree = "<group>"; };
 		E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToKitchenDelegate.swift; sourceTree = "<group>"; };
 		E3CB8AC022C088CD0049DBE8 /* StairScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene.swift; sourceTree = "<group>"; };
 		E3CB8AC222C088E40049DBE8 /* StairScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene.sks; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		930D15F922B8CBB800831E8C /* sound */ = {
 			isa = PBXGroup;
 			children = (
-				55CEE97222C0C07100A65F2A /* step_stair.mp3 */,
+				93FC312122C0C5B300D3C92D /* step_stair.mp3 */,
 				930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */,
 				939B432E22BA4AE90059C54D /* bg_sound.mp3 */,
 			);
@@ -396,6 +396,7 @@
 			files = (
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
+				93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */,
 				E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */,
 				E3E43EA322BCD27A00665671 /* BedroomScene.sks in Resources */,
 				E3CB8AC722C0B6490049DBE8 /* ChildrenActions.sks in Resources */,
@@ -404,7 +405,6 @@
 				E3E43E9922BCD0D600665671 /* SceneTwo.sks in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
 				930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */,
-				55CEE97322C0C07100A65F2A /* step_stair.mp3 in Resources */,
 				E3E43EA822BE721D00665671 /* KitchenScene.sks in Resources */,
 				E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */,
 				93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */,
