@@ -11,6 +11,12 @@ import GameplayKit
 
 class EndingScene: SKScene {
     
+    private var blackscreen : SKSpriteNode?
+    private var label1 : SKLabelNode?
+    private var label2 : SKLabelNode?
+    private var label3 : SKLabelNode?
+    
+    
     override func didMove(to view: SKView) {
         
         initiateComponents()
