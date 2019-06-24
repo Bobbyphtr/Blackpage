@@ -10,14 +10,14 @@ class ChildrenAnimationComponent: GKComponent {
     
     override init() {
         super.init()
-        idleAnimation = SKAction(named: "Idle")
-        walkAnimation = SKAction(named: "Walk")
+        idleAnimation = SKAction(named: "anak_idle")
+        walkAnimation = SKAction(named: "anak_walk")
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        idleAnimation = SKAction(named: "Idle")
-        walkAnimation = SKAction(named: "Walk")
+        idleAnimation = SKAction(named: "anak_idle")
+        walkAnimation = SKAction(named: "anak_walk")
         
     }
     
@@ -37,14 +37,14 @@ class ChildrenAnimationComponent: GKComponent {
                 print("childground")
                 
                 if(cNode?.left)! || (cNode?.right)! {
-                    if(cNode?.action(forKey: "Walk") == nil){
+                    if(cNode?.action(forKey: "anak_walk") == nil){
                         cNode?.removeAllActions()
-                        cNode?.run(walkAnimation!, withKey: "Walk")
+                        cNode?.run(walkAnimation!, withKey: "anak_walk")
                     }
                 }else {
-                    if(cNode?.action(forKey: "Idle") == nil) {
+                    if(cNode?.action(forKey: "anak_idle") == nil) {
                         cNode?.removeAllActions()
-                        cNode?.run(idleAnimation!, withKey: "Idle")
+                        cNode?.run(idleAnimation!, withKey: "anak_idle")
                     }
                 }
             }
