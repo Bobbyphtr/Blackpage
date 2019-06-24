@@ -11,6 +11,9 @@ import GameplayKit
 
 class StairScene: SKScene, ChangeSceneToKitchenDelegate {
     
+    
+    
+    
     func changeSceneToKitchen() {
         if let scene = GKScene(fileNamed: "KitchenScene") {
             
@@ -52,11 +55,17 @@ class StairScene: SKScene, ChangeSceneToKitchenDelegate {
         self.lastUpdateTime = 0
         
     }
-    
+    var tanggaTouch = SKSpriteNode()
     
     override func didMove(to view: SKView) {
         
         //jika ada childnode(entity?) "Player", jalankan fungsi setupcontrols dari playercontrolcomponent.
+        
+        tanggaTouch = SKSpriteNode(imageNamed: "panahBawah")
+        tanggaTouch.position = CGPoint.init(x: -30, y: 30)
+        tanggaTouch.size = CGSize.init(width: 60, height: 60)
+        tanggaTouch.zPosition = 1
+        self.addChild(tanggaTouch)
         
         
         if let thePlayer = childNode(withName: "Mom"){
@@ -103,6 +112,20 @@ class StairScene: SKScene, ChangeSceneToKitchenDelegate {
         }
         
         self.lastUpdateTime = currentTime
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        for touch in touches {
+            let touchLocation:CGPoint = touch.location(in: self)
+            if tanggaTouch.contains(touchLocation){
+                let sceneTanggaBawah = StairScene2(fileNamed: "StairScene2")
+                sceneTanggaBawah?.scaleMode = .aspectFill
+                self.view?.presentScene(sceneTanggaBawah!, transition: SKTransition.fade(withDuration: 2.0))
+                run(SKAction.playSoundFileNamed("step_stair.mp3", waitForCompletion: false))
+            }
+        }
+        
     }
 }
 
