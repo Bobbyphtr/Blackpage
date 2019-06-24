@@ -9,13 +9,13 @@
 import SpriteKit
 import GameplayKit
 
-class BedroomScene: SKScene, ChangeSceneToStairsDelegate {
+class StairScene: SKScene, ChangeSceneToKitchenDelegate {
     
-    func changeSceneToStairs() {
-        if let scene = GKScene(fileNamed: "StairScene") {
+    func changeSceneToKitchen() {
+        if let scene = GKScene(fileNamed: "KitchenScene") {
             
             // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! StairScene? {
+            if let sceneNode = scene.rootNode as! KitchenScene? {
                 
                 // Copy gameplay related content over to the scene
                 sceneNode.entities = scene.entities
@@ -59,13 +59,13 @@ class BedroomScene: SKScene, ChangeSceneToStairsDelegate {
         //jika ada childnode(entity?) "Player", jalankan fungsi setupcontrols dari playercontrolcomponent.
         
         
-        if let thePlayer = childNode(withName: "Player"){
+        if let thePlayer = childNode(withName: "Mom"){
             
             
             player = thePlayer as? CharacterNode
             if(player != nil) {
                 player?.setUpStateMachine(scene: self)
-                player?.changeSceneToStairs = self
+                player?.changeSceneToKitchen = self
             }
             
             // memasukkan logika gerak (state)

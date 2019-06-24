@@ -16,6 +16,7 @@ class PlayerControlComponent: GKComponent,  ControlInputDelegate{
     
     var touchControlNode : TouchControlInputNode?
     var cNode: CharacterNode?
+    var childrenNode: ChildrenNode?
     
     //menambahkan touchcontrol kedalam kamera.
     func setupControls(camera : SKCameraNode, scene: SKScene) {
@@ -38,6 +39,13 @@ class PlayerControlComponent: GKComponent,  ControlInputDelegate{
         }
     }
     
+    func setupChildren(node: ChildrenNode?){
+        if(node != nil) {
+            childrenNode = node
+        }
+    }
+    
+    
     func follow(command: String?) {
         
         if(cNode != nil){
@@ -45,12 +53,16 @@ class PlayerControlComponent: GKComponent,  ControlInputDelegate{
             switch(command!) {
             case("left"):
                 cNode?.left = true
+                childrenNode?.left = true
             case "cancel left", "stop left":
                 cNode?.left = false
+                childrenNode?.left = false
             case "right":
                 cNode?.right = true
+                childrenNode?.right = true
             case "cancel right", "stop right":
                 cNode?.right = false
+                childrenNode?.right = false
                 
             default:
                 print("command:\(String(describing: command))")
@@ -65,6 +77,7 @@ class PlayerControlComponent: GKComponent,  ControlInputDelegate{
         super.update(deltaTime: seconds)
         //        print("bar mangan gak udut paru2 gak smile")
         cNode?.stateMachine?.update(deltaTime: seconds)
+        childrenNode?.stateMachine?.update(deltaTime: seconds)
     }
     
 }

@@ -18,6 +18,7 @@ class CharacterNode: SKSpriteNode {
 //    var changeScene = false
     
     var changeSceneToStairs: ChangeSceneToStairsDelegate?
+    var changeSceneToKitchen: ChangeSceneToKitchenDelegate?
     
     var grounded = false
     var landed = false
