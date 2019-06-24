@@ -71,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55330C7522C0C3FF0047510F /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = step_stair.mp3; path = ../../../../Blackpage/Blackpage/sound/step_stair.mp3; sourceTree = "<group>"; };
 		55CEE96C22C0B78400A65F2A /* StairScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene2.sks; sourceTree = "<group>"; };
 		55CEE96E22C0B79900A65F2A /* StairScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene2.swift; sourceTree = "<group>"; };
 		67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Knocked door sound.wav"; sourceTree = "<group>"; };
