@@ -24,6 +24,7 @@
 		E3CB8ABF22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */; };
 		E3CB8AC122C088CD0049DBE8 /* StairScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8AC022C088CD0049DBE8 /* StairScene.swift */; };
 		E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3CB8AC222C088E40049DBE8 /* StairScene.sks */; };
+		E3CB8AC722C0B6490049DBE8 /* ChildrenActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3CB8AC622C0B6490049DBE8 /* ChildrenActions.sks */; };
 		E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3E43E7E22BCD0A000665671 /* PlayerActions.sks */; };
 		E3E43E8922BCD0A000665671 /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E8222BCD0A000665671 /* AnimationComponent.swift */; };
 		E3E43E8A22BCD0A000665671 /* PlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E43E8322BCD0A000665671 /* PlayerControlComponent.swift */; };
@@ -87,6 +88,7 @@
 		E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToKitchenDelegate.swift; sourceTree = "<group>"; };
 		E3CB8AC022C088CD0049DBE8 /* StairScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene.swift; sourceTree = "<group>"; };
 		E3CB8AC222C088E40049DBE8 /* StairScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene.sks; sourceTree = "<group>"; };
+		E3CB8AC622C0B6490049DBE8 /* ChildrenActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ChildrenActions.sks; sourceTree = "<group>"; };
 		E3E43E7E22BCD0A000665671 /* PlayerActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerActions.sks; sourceTree = "<group>"; };
 		E3E43E8222BCD0A000665671 /* AnimationComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
 		E3E43E8322BCD0A000665671 /* PlayerControlComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerControlComponent.swift; sourceTree = "<group>"; };
@@ -244,7 +246,6 @@
 				E3E43E8022BCD0A000665671 /* Components */,
 				E3E43E8422BCD0A000665671 /* StateMachine */,
 				E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */,
-				E3E43E7E22BCD0A000665671 /* PlayerActions.sks */,
 			);
 			path = Character;
 			sourceTree = "<group>";
@@ -274,6 +275,7 @@
 			children = (
 				E3E43E9022BCD0D600665671 /* CharacterNode.swift */,
 				E3E43E8D22BCD0D600665671 /* PhysicsDetection.swift */,
+				E3E43E7E22BCD0A000665671 /* PlayerActions.sks */,
 			);
 			path = Mom;
 			sourceTree = "<group>";
@@ -283,6 +285,7 @@
 			children = (
 				E3E43EAB22BE846400665671 /* ChildrenNode.swift */,
 				E3E43EAF22BE85B700665671 /* ChildrenPhysicsDetection.swift */,
+				E3CB8AC622C0B6490049DBE8 /* ChildrenActions.sks */,
 			);
 			path = Children;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */,
 				E3E43EA322BCD27A00665671 /* BedroomScene.sks in Resources */,
+				E3CB8AC722C0B6490049DBE8 /* ChildrenActions.sks in Resources */,
 				939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */,
 				55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */,
 				E3E43E9922BCD0D600665671 /* SceneTwo.sks in Resources */,
