@@ -64,7 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55330C7522C0C3FF0047510F /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = step_stair.mp3; path = ../../../../Downloads/step_stair.mp3; sourceTree = "<group>"; };
+		55330C7522C0C3FF0047510F /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = step_stair.mp3; path = ../../../../Blackpage/Blackpage/sound/step_stair.mp3; sourceTree = "<group>"; };
 		55CEE96C22C0B78400A65F2A /* StairScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene2.sks; sourceTree = "<group>"; };
 		55CEE96E22C0B79900A65F2A /* StairScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene2.swift; sourceTree = "<group>"; };
 		930D15C222B8C6C500831E8C /* Blackpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
