@@ -17,17 +17,21 @@ class GameViewController: UIViewController {
         
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
-        if let scene = SplashScreen(fileNamed: "SplashScreen") {
+        if let scene = GKScene(fileNamed: "BedroomScene") {
             
             // Get the SKScene from the loaded GKScene
-//            if let sceneNode = scene.rootNode as! Backdoor? {
-            
+            if let sceneNode = scene.rootNode as! BedroomScene? {
+                
+                // Copy gameplay related content over to the scene
+                sceneNode.entities = scene.entities
+                sceneNode.graphs = scene.graphs
+                
                 // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
+                sceneNode.scaleMode = .aspectFill
                 
                 // Present the scene
                 if let view = self.view as! SKView? {
-                    view.presentScene(scene)
+                    view.presentScene(sceneNode)
                     
                     view.ignoresSiblingOrder = true
                     
@@ -35,7 +39,7 @@ class GameViewController: UIViewController {
                     view.showsPhysics = true
                     view.showsNodeCount = true
                 }
-//            }
+            }
         }
     }
     
