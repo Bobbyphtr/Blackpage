@@ -52,5 +52,6 @@ class Backdoor: SKScene {
 //        for touch in touches {
 //            //let touchLocation : CGPoint = touch.location(in: self)
 //        }
+        //wawwwwww
     }
 }
