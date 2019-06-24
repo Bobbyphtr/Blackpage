@@ -99,11 +99,41 @@ class SplashScreen: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       for touch in touches {
             let touchLocation : CGPoint = touch.location(in: self)
-            if startButton?.contains(touchLocation) ?? false {
-                //self.scene?.view?.presentScene(SKScene.init(fileNamed: "OpeningScene")!, transition: SKTransition.fade(withDuration: 3.0))
+            if !isButtonPressed {
+                if startButton?.contains(touchLocation) ?? false {
+                    isButtonPressed = true
+                    buttonPressedAction()
+
+                } else if continueButton?.contains(touchLocation) ?? false {
+                    isButtonPressed = true
+                }
             }
 
         }
         
+    }
+    
+    func buttonPressedAction() -> Void {
+        let actionGroup = SKAction.group([SKAction.run {
+            self.whiteLayer?.run(SKAction.fadeAlpha(to: 1, duration: 0.1), completion: {
+                self.whiteLayer?.run(SKAction.fadeAlpha(to: 0, duration: 1), completion: {
+                    self.whiteLayer?.color = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                    self.whiteLayer?.run(SKAction.fadeAlpha(to: 1, duration: 3), completion: {
+                        self.terminateAll()
+                        self.changeScene()
+                    })
+                })
+            })}, SKAction.playSoundFileNamed("epic_button_pressed.mp3", waitForCompletion: false),
+                 SKAction.run { self.ambienceSound.run(SKAction.stop()) }])
+        self.run(actionGroup)
+        
+    }
+    
+    func terminateAll(){
+        self.removeAllChildren()
+    }
+    
+    func changeScene(){
+        print("Change Scene")
     }
 }
