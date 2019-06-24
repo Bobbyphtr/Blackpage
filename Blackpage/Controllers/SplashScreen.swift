@@ -16,6 +16,7 @@ class SplashScreen: SKScene {
     private var continueButton : SKSpriteNode?
     private var gameTitle:SKSpriteNode?
     private var bg:SKSpriteNode?
+    private var whiteLayer : SKSpriteNode?
     
     let ambienceSound = SKAudioNode(fileNamed: "bg_sound.mp3")
     let labelIntro = SKLabelNode(text: "Tom team presents")
@@ -37,7 +38,7 @@ class SplashScreen: SKScene {
         
         
         let introGroup = SKAction.group([
-                SKAction.run(fadeInBgSound), SKAction.run(fadeInFadeOutLabelIntro)])
+            SKAction.run(fadeInBgSound), SKAction.run(fadeInFadeOutLabelIntro)])
         
         self.run(introGroup)
         
@@ -50,6 +51,10 @@ class SplashScreen: SKScene {
             self.ambienceSound.run(SKAction.play())
             self.ambienceSound.run(SKAction.changeVolume(by: 200, duration: 9))
         }
+    }
+    
+    func fadeOutBgSound() -> Void {
+        self.ambienceSound.run(SKAction.stop())
     }
     
     func fadeInFadeOutLabelIntro() -> Void {
@@ -78,6 +83,8 @@ class SplashScreen: SKScene {
         continueButton = self.childNode(withName: "continue") as? SKSpriteNode
         gameTitle = self.childNode(withName: "gameTitle") as? SKSpriteNode
         bg = self.childNode(withName: "bg") as? SKSpriteNode
+        whiteLayer = self.childNode(withName: "whitelayer") as? SKSpriteNode
+        
         labelIntro.zPosition = 7
         self.addChild(ambienceSound)
         self.addChild(labelIntro)
@@ -96,31 +103,21 @@ class SplashScreen: SKScene {
         
     }
     
+    private var isButtonPressed = false
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-      for touch in touches {
+        for touch in touches {
             let touchLocation : CGPoint = touch.location(in: self)
-<<<<<<< HEAD
-<<<<<<< HEAD
             if !isButtonPressed {
                 if startButton?.contains(touchLocation) ?? false {
                     isButtonPressed = true
                     buttonPressedAction()
-
+                    
                 } else if continueButton?.contains(touchLocation) ?? false {
                     isButtonPressed = true
                 }
-=======
-            if startButton?.contains(touchLocation) ?? false {
-                //self.scene?.view?.presentScene(SKScene.init(fileNamed: "OpeningScene")!, transition: SKTransition.fade(withDuration: 3.0))
->>>>>>> parent of fe44e06... Merge remote-tracking branch 'origin/master'
-=======
-            if startButton?.contains(touchLocation) ?? false {
-                //self.scene?.view?.presentScene(SKScene.init(fileNamed: "OpeningScene")!, transition: SKTransition.fade(withDuration: 3.0))
->>>>>>> parent of 18972c9... Merge branch 'Bobby-backdoorEnding'
             }
-
         }
-        
     }
     
     func buttonPressedAction() -> Void {
