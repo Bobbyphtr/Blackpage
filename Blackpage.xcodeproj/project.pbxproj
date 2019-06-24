@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55CEE96C22C0B78400A65F2A /* StairScene2.sks */; };
 		55CEE96F22C0B79900A65F2A /* StairScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CEE96E22C0B79900A65F2A /* StairScene2.swift */; };
+		67392ED922C0B51C00BE76A8 /* Knocked door sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */; };
+		677F0D4B22BCC783007BB9BC /* OpeningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F0D4A22BCC783007BB9BC /* OpeningScene.swift */; };
+		677F0D4D22BCC790007BB9BC /* OpeningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 677F0D4C22BCC790007BB9BC /* OpeningScene.sks */; };
+		677F0D4F22BCC802007BB9BC /* openingbedroom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 677F0D4E22BCC802007BB9BC /* openingbedroom.sks */; };
+		677F0D5122BCC80F007BB9BC /* openingbedroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F0D5022BCC80F007BB9BC /* openingbedroom.swift */; };
 		930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15C522B8C6C500831E8C /* AppDelegate.swift */; };
 		930D15CC22B8C6C500831E8C /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15CB22B8C6C500831E8C /* SplashScreen.swift */; };
 		930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15CD22B8C6C500831E8C /* GameViewController.swift */; };
@@ -67,6 +72,11 @@
 /* Begin PBXFileReference section */
 		55CEE96C22C0B78400A65F2A /* StairScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene2.sks; sourceTree = "<group>"; };
 		55CEE96E22C0B79900A65F2A /* StairScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene2.swift; sourceTree = "<group>"; };
+		67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Knocked door sound.wav"; sourceTree = "<group>"; };
+		677F0D4A22BCC783007BB9BC /* OpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScene.swift; sourceTree = "<group>"; };
+		677F0D4C22BCC790007BB9BC /* OpeningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OpeningScene.sks; sourceTree = "<group>"; };
+		677F0D4E22BCC802007BB9BC /* openingbedroom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = openingbedroom.sks; sourceTree = "<group>"; };
+		677F0D5022BCC80F007BB9BC /* openingbedroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openingbedroom.swift; sourceTree = "<group>"; };
 		930D15C222B8C6C500831E8C /* Blackpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930D15C522B8C6C500831E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		930D15CB22B8C6C500831E8C /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
@@ -136,6 +146,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		677F0D4922BCC711007BB9BC /* Original Swift */ = {
+			isa = PBXGroup;
+			children = (
+				930D15C722B8C6C500831E8C /* GameScene.sks */,
+				930D15C922B8C6C500831E8C /* Actions.sks */,
+				930D15CB22B8C6C500831E8C /* GameScene.swift */,
+			);
+			path = "Original Swift";
+			sourceTree = "<group>";
+		};
 		930D15B922B8C6C500831E8C = {
 			isa = PBXGroup;
 			children = (
@@ -163,11 +183,18 @@
 				9330A51C22BCE4A700363FFE /* Scenes */,
 				930D15F922B8CBB800831E8C /* sound */,
 				930D15CD22B8C6C500831E8C /* GameViewController.swift */,
+				67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */,
 				930D15C522B8C6C500831E8C /* AppDelegate.swift */,
+				930D15CD22B8C6C500831E8C /* GameViewController.swift */,
+				677F0D4922BCC711007BB9BC /* Original Swift */,
 				930D15CF22B8C6C500831E8C /* Main.storyboard */,
 				930D15D222B8C6C600831E8C /* Assets.xcassets */,
 				930D15D422B8C6C600831E8C /* LaunchScreen.storyboard */,
 				930D15D722B8C6C600831E8C /* Info.plist */,
+				677F0D4C22BCC790007BB9BC /* OpeningScene.sks */,
+				677F0D4A22BCC783007BB9BC /* OpeningScene.swift */,
+				677F0D4E22BCC802007BB9BC /* openingbedroom.sks */,
+				677F0D5022BCC80F007BB9BC /* openingbedroom.swift */,
 			);
 			path = Blackpage;
 			sourceTree = "<group>";
@@ -395,6 +422,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
+				930D15C822B8C6C500831E8C /* GameScene.sks in Resources */,
+				677F0D4F22BCC802007BB9BC /* openingbedroom.sks in Resources */,
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */,
 				E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */,
@@ -408,6 +437,9 @@
 				E3E43EA822BE721D00665671 /* KitchenScene.sks in Resources */,
 				E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */,
 				93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */,
+				677F0D4D22BCC790007BB9BC /* OpeningScene.sks in Resources */,
+				67392ED922C0B51C00BE76A8 /* Knocked door sound.wav in Resources */,
+				930D15CA22B8C6C500831E8C /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +479,8 @@
 				E3E43E9422BCD0D600665671 /* PhysicsDetection.swift in Sources */,
 				E3E43E8A22BCD0A000665671 /* PlayerControlComponent.swift in Sources */,
 				E3E43E9522BCD0D600665671 /* SceneTwo.swift in Sources */,
+				677F0D4B22BCC783007BB9BC /* OpeningScene.swift in Sources */,
+				930D15CC22B8C6C500831E8C /* GameScene.swift in Sources */,
 				930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */,
 				E3E43EAA22BE72AF00665671 /* KitchenScene.swift in Sources */,
 				E3E43E9F22BCD1B200665671 /* BedroomScene.swift in Sources */,
@@ -454,6 +488,7 @@
 				E3E43E8B22BCD0A000665671 /* NormalState.swift in Sources */,
 				930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */,
 				E3E43E9622BCD0D600665671 /* ControlInputDelegate.swift in Sources */,
+				677F0D5122BCC80F007BB9BC /* openingbedroom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,15 +664,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85879C62RU;
+				DEVELOPMENT_TEAM = 62VFPQ289V;
 				INFOPLIST_FILE = Blackpage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xenoire.Blackpage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -647,15 +683,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85879C62RU;
+				DEVELOPMENT_TEAM = 62VFPQ289V;
 				INFOPLIST_FILE = Blackpage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xenoire.Blackpage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
