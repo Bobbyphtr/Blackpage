@@ -9,6 +9,8 @@ import SpriteKit
 class Scene1Stair: SKScene {
     
     var tanggaTouch = SKSpriteNode()
+//    var sound = SKAction.playSoundFileNamed("step_stair.wav", waitForCompletion: false)
+    
     override func didMove(to view: SKView) {
         
         
@@ -26,11 +28,12 @@ class Scene1Stair: SKScene {
                 if tanggaTouch.contains(touchLocation){
                     let sceneTanggaBawah = Scene1StairBawah(fileNamed: "Scene1StairBawah")
                     sceneTanggaBawah?.scaleMode = .aspectFill
-                    self.view?.presentScene(sceneTanggaBawah!, transition: SKTransition.fade(withDuration: 0.5))
-
+                    self.view?.presentScene(sceneTanggaBawah!, transition: SKTransition.fade(withDuration: 2.1))
+                    run(SKAction.playSoundFileNamed("step_stair.mp3", waitForCompletion: true))
                 }
             }
             
         }
+    
     }
 

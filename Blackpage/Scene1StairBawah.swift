@@ -12,7 +12,7 @@ class Scene1StairBawah: SKScene {
     
     override func didMove(to view: SKView) {
         tanggaTouch = SKSpriteNode(imageNamed: "panahNaik")
-        tanggaTouch.position = CGPoint.init(x: -30, y: 30)
+        tanggaTouch.position = CGPoint.init(x: -300, y: 30)
         tanggaTouch.size = CGSize.init(width: 60, height: 60)
         tanggaTouch.zPosition = 1
         self.addChild(tanggaTouch)
@@ -26,8 +26,8 @@ class Scene1StairBawah: SKScene {
             if tanggaTouch.contains(touchLocation){
                 let sceneTanggaAtas = Scene1Stair(fileNamed: "Scene1Stair")
                 sceneTanggaAtas?.scaleMode = .aspectFill
-                self.view?.presentScene(sceneTanggaAtas!, transition: SKTransition.fade(withDuration: 0.5))
-
+                self.view?.presentScene(sceneTanggaAtas!, transition: SKTransition.fade(withDuration: 2.1))
+                run(SKAction.playSoundFileNamed("step_stair.mp3", waitForCompletion: true))
             }
         }
         
