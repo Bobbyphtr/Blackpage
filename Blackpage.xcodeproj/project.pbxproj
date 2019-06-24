@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55CEE96C22C0B78400A65F2A /* StairScene2.sks */; };
 		55CEE96F22C0B79900A65F2A /* StairScene2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CEE96E22C0B79900A65F2A /* StairScene2.swift */; };
+		55FC76BF22C0F0EE006C7EFE /* FrontDoor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 55FC76BE22C0F0EE006C7EFE /* FrontDoor.sks */; };
+		55FC76C122C0F0FE006C7EFE /* FrontDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FC76C022C0F0FE006C7EFE /* FrontDoor.swift */; };
 		67392ED922C0B51C00BE76A8 /* Knocked door sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */; };
 		677F0D4B22BCC783007BB9BC /* OpeningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F0D4A22BCC783007BB9BC /* OpeningScene.swift */; };
 		677F0D4D22BCC790007BB9BC /* OpeningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 677F0D4C22BCC790007BB9BC /* OpeningScene.sks */; };
@@ -75,6 +77,8 @@
 /* Begin PBXFileReference section */
 		55CEE96C22C0B78400A65F2A /* StairScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene2.sks; sourceTree = "<group>"; };
 		55CEE96E22C0B79900A65F2A /* StairScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene2.swift; sourceTree = "<group>"; };
+		55FC76BE22C0F0EE006C7EFE /* FrontDoor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FrontDoor.sks; sourceTree = "<group>"; };
+		55FC76C022C0F0FE006C7EFE /* FrontDoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontDoor.swift; sourceTree = "<group>"; };
 		67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Knocked door sound.wav"; sourceTree = "<group>"; };
 		677F0D4A22BCC783007BB9BC /* OpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScene.swift; sourceTree = "<group>"; };
 		677F0D4C22BCC790007BB9BC /* OpeningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OpeningScene.sks; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				E3E43EA722BE721D00665671 /* KitchenScene.sks */,
 				E3CB8AC222C088E40049DBE8 /* StairScene.sks */,
 				55CEE96C22C0B78400A65F2A /* StairScene2.sks */,
+				55FC76BE22C0F0EE006C7EFE /* FrontDoor.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				9330A51E22BCE61900363FFE /* Delegates */,
 				938B903722C0F53900650EC3 /* EndingScene.swift */,
 				E3E43E8C22BCD0D500665671 /* TouchControlInputNode.swift */,
+				55FC76C022C0F0FE006C7EFE /* FrontDoor.swift */,
 				E3E43E9E22BCD1B200665671 /* BedroomScene.swift */,
 				E3E43E8E22BCD0D600665671 /* SceneTwo.swift */,
 				E3CB8AC022C088CD0049DBE8 /* StairScene.swift */,
@@ -430,6 +436,7 @@
 				55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */,
 				E3E43E9922BCD0D600665671 /* SceneTwo.sks in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
+				55FC76BF22C0F0EE006C7EFE /* FrontDoor.sks in Resources */,
 				930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */,
 				E3E43EA822BE721D00665671 /* KitchenScene.sks in Resources */,
 				938B903A22C0F55800650EC3 /* EndingScene.sks in Resources */,
@@ -472,6 +479,7 @@
 				E3E43EB422BE98EE00665671 /* ChildrenTouchedComponent.swift in Sources */,
 				E3E43E8922BCD0A000665671 /* AnimationComponent.swift in Sources */,
 				E3E43EB022BE85B700665671 /* ChildrenPhysicsDetection.swift in Sources */,
+				55FC76C122C0F0FE006C7EFE /* FrontDoor.swift in Sources */,
 				E3E43E9422BCD0D600665671 /* PhysicsDetection.swift in Sources */,
 				E3E43E8A22BCD0A000665671 /* PlayerControlComponent.swift in Sources */,
 				E3E43E9522BCD0D600665671 /* SceneTwo.swift in Sources */,
@@ -661,7 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62VFPQ289V;
+				DEVELOPMENT_TEAM = BTALJSXMU6;
 				INFOPLIST_FILE = Blackpage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -680,7 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62VFPQ289V;
+				DEVELOPMENT_TEAM = BTALJSXMU6;
 				INFOPLIST_FILE = Blackpage/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
