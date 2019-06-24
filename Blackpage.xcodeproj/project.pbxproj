@@ -18,6 +18,11 @@
 		930D15E122B8C6C600831E8C /* BlackpageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15E022B8C6C600831E8C /* BlackpageTests.swift */; };
 		930D15EC22B8C6C600831E8C /* BlackpageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15EB22B8C6C600831E8C /* BlackpageUITests.swift */; };
 		930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */; };
+		933D818222C0B47200AFFAF9 /* EndingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D818122C0B47200AFFAF9 /* EndingScene.swift */; };
+		933D818422C0B49300AFFAF9 /* EndingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 933D818322C0B49300AFFAF9 /* EndingScene.sks */; };
+		934785E322BCF872007C1D49 /* Backdoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934785E222BCF872007C1D49 /* Backdoor.swift */; };
+		936FD5CE22BFF47F00E521FC /* epic_button_pressed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 936FD5CD22BFF47F00E521FC /* epic_button_pressed.mp3 */; };
+		93766A6022BCEA1D0023B5D9 /* Backdoor.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93766A5F22BCEA1D0023B5D9 /* Backdoor.sks */; };
 		939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939B432E22BA4AE90059C54D /* bg_sound.mp3 */; };
 		93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B3D722B8D69A00959C99 /* SplashScreen.sks */; };
 		93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93FC312122C0C5B300D3C92D /* step_stair.mp3 */; };
@@ -82,6 +87,11 @@
 		930D15EB22B8C6C600831E8C /* BlackpageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackpageUITests.swift; sourceTree = "<group>"; };
 		930D15ED22B8C6C600831E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror_ambience.mp3; sourceTree = "<group>"; };
+		933D818122C0B47200AFFAF9 /* EndingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingScene.swift; sourceTree = "<group>"; };
+		933D818322C0B49300AFFAF9 /* EndingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndingScene.sks; sourceTree = "<group>"; };
+		934785E222BCF872007C1D49 /* Backdoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdoor.swift; sourceTree = "<group>"; };
+		936FD5CD22BFF47F00E521FC /* epic_button_pressed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = epic_button_pressed.mp3; sourceTree = "<group>"; };
+		93766A5F22BCEA1D0023B5D9 /* Backdoor.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Backdoor.sks; sourceTree = "<group>"; };
 		939B432E22BA4AE90059C54D /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
 		93F6B3D722B8D69A00959C99 /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
 		93FC312122C0C5B300D3C92D /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_stair.mp3; sourceTree = "<group>"; };
@@ -194,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				93FC312122C0C5B300D3C92D /* step_stair.mp3 */,
+				936FD5CD22BFF47F00E521FC /* epic_button_pressed.mp3 */,
 				930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */,
 				939B432E22BA4AE90059C54D /* bg_sound.mp3 */,
 			);
@@ -209,6 +220,8 @@
 				E3E43EA722BE721D00665671 /* KitchenScene.sks */,
 				E3CB8AC222C088E40049DBE8 /* StairScene.sks */,
 				55CEE96C22C0B78400A65F2A /* StairScene2.sks */,
+				93766A5F22BCEA1D0023B5D9 /* Backdoor.sks */,
+				933D818322C0B49300AFFAF9 /* EndingScene.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -218,6 +231,7 @@
 			children = (
 				9330A51F22BCE64300363FFE /* Character */,
 				9330A51E22BCE61900363FFE /* Delegates */,
+				933D818122C0B47200AFFAF9 /* EndingScene.swift */,
 				E3E43E8C22BCD0D500665671 /* TouchControlInputNode.swift */,
 				930D15CB22B8C6C500831E8C /* SplashScreen.swift */,
 				E3E43E9E22BCD1B200665671 /* BedroomScene.swift */,
@@ -225,6 +239,7 @@
 				E3CB8AC022C088CD0049DBE8 /* StairScene.swift */,
 				55CEE96E22C0B79900A65F2A /* StairScene2.swift */,
 				E3E43EA922BE72AF00665671 /* KitchenScene.swift */,
+				934785E222BCF872007C1D49 /* Backdoor.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -395,15 +410,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
+				933D818422C0B49300AFFAF9 /* EndingScene.sks in Resources */,
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */,
 				E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */,
+				936FD5CE22BFF47F00E521FC /* epic_button_pressed.mp3 in Resources */,
 				E3E43EA322BCD27A00665671 /* BedroomScene.sks in Resources */,
 				E3CB8AC722C0B6490049DBE8 /* ChildrenActions.sks in Resources */,
 				939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */,
 				55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */,
 				E3E43E9922BCD0D600665671 /* SceneTwo.sks in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
+				93766A6022BCEA1D0023B5D9 /* Backdoor.sks in Resources */,
 				930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */,
 				E3E43EA822BE721D00665671 /* KitchenScene.sks in Resources */,
 				E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */,
@@ -432,12 +450,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933D818222C0B47200AFFAF9 /* EndingScene.swift in Sources */,
 				930D15CC22B8C6C500831E8C /* SplashScreen.swift in Sources */,
 				E3E43E9722BCD0D600665671 /* CharacterNode.swift in Sources */,
 				E3E43EAC22BE846400665671 /* ChildrenNode.swift in Sources */,
 				55CEE96F22C0B79900A65F2A /* StairScene2.swift in Sources */,
 				E3E43EB622BEA05600665671 /* ChildrenAnimationComponent.swift in Sources */,
 				E3CB8AC122C088CD0049DBE8 /* StairScene.swift in Sources */,
+				934785E322BCF872007C1D49 /* Backdoor.swift in Sources */,
 				E3E43E9322BCD0D600665671 /* TouchControlInputNode.swift in Sources */,
 				E3E43EA622BCD8E900665671 /* ChangeSceneToStairsDelegate.swift in Sources */,
 				E3CB8ABF22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift in Sources */,
