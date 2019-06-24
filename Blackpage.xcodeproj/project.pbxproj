@@ -337,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
+				552EA56122BCEF9B00011855 /* step_stair.mp3 in Resources */,
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				E3E43EA322BCD27A00665671 /* BedroomScene.sks in Resources */,
 				939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */,
