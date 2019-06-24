@@ -24,6 +24,8 @@
 		930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */; };
 		938B902F22C0E9F900650EC3 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B902E22C0E9F900650EC3 /* SplashScreen.swift */; };
 		938B903122C0EA6700650EC3 /* epic_button_pressed.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 938B903022C0EA6700650EC3 /* epic_button_pressed.mp3 */; };
+		938B903822C0F53900650EC3 /* EndingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938B903722C0F53900650EC3 /* EndingScene.swift */; };
+		938B903A22C0F55800650EC3 /* EndingScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 938B903922C0F55800650EC3 /* EndingScene.sks */; };
 		939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939B432E22BA4AE90059C54D /* bg_sound.mp3 */; };
 		93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B3D722B8D69A00959C99 /* SplashScreen.sks */; };
 		93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93FC312122C0C5B300D3C92D /* step_stair.mp3 */; };
@@ -71,7 +73,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55330C7522C0C3FF0047510F /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = step_stair.mp3; path = ../../../../Blackpage/Blackpage/sound/step_stair.mp3; sourceTree = "<group>"; };
 		55CEE96C22C0B78400A65F2A /* StairScene2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene2.sks; sourceTree = "<group>"; };
 		55CEE96E22C0B79900A65F2A /* StairScene2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene2.swift; sourceTree = "<group>"; };
 		67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Knocked door sound.wav"; sourceTree = "<group>"; };
@@ -95,6 +96,8 @@
 		930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horror_ambience.mp3; sourceTree = "<group>"; };
 		938B902E22C0E9F900650EC3 /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		938B903022C0EA6700650EC3 /* epic_button_pressed.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = epic_button_pressed.mp3; sourceTree = "<group>"; };
+		938B903722C0F53900650EC3 /* EndingScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndingScene.swift; path = Blackpage/Controllers/EndingScene.swift; sourceTree = SOURCE_ROOT; };
+		938B903922C0F55800650EC3 /* EndingScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndingScene.sks; sourceTree = "<group>"; };
 		939B432E22BA4AE90059C54D /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
 		93F6B3D722B8D69A00959C99 /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
 		93FC312122C0C5B300D3C92D /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_stair.mp3; sourceTree = "<group>"; };
@@ -222,6 +225,7 @@
 		9330A51C22BCE4A700363FFE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				938B903922C0F55800650EC3 /* EndingScene.sks */,
 				E3E43EA222BCD27A00665671 /* BedroomScene.sks */,
 				E3E43E9222BCD0D600665671 /* SceneTwo.sks */,
 				93F6B3D722B8D69A00959C99 /* SplashScreen.sks */,
@@ -237,6 +241,7 @@
 			children = (
 				9330A51F22BCE64300363FFE /* Character */,
 				9330A51E22BCE61900363FFE /* Delegates */,
+				938B903722C0F53900650EC3 /* EndingScene.swift */,
 				E3E43E8C22BCD0D500665671 /* TouchControlInputNode.swift */,
 				E3E43E9E22BCD1B200665671 /* BedroomScene.swift */,
 				E3E43E8E22BCD0D600665671 /* SceneTwo.swift */,
@@ -427,6 +432,7 @@
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
 				930D15FB22B8CBED00831E8C /* horror_ambience.mp3 in Resources */,
 				E3E43EA822BE721D00665671 /* KitchenScene.sks in Resources */,
+				938B903A22C0F55800650EC3 /* EndingScene.sks in Resources */,
 				E3E43E8622BCD0A000665671 /* PlayerActions.sks in Resources */,
 				93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */,
 				677F0D4D22BCC790007BB9BC /* OpeningScene.sks in Resources */,
@@ -475,6 +481,7 @@
 				E3E43E9F22BCD1B200665671 /* BedroomScene.swift in Sources */,
 				938B902F22C0E9F900650EC3 /* SplashScreen.swift in Sources */,
 				E3E43EAE22BE84AA00665671 /* ChildrenState.swift in Sources */,
+				938B903822C0F53900650EC3 /* EndingScene.swift in Sources */,
 				E3E43E8B22BCD0A000665671 /* NormalState.swift in Sources */,
 				930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */,
 				E3E43E9622BCD0D600665671 /* ControlInputDelegate.swift in Sources */,
