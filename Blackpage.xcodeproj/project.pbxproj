@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67392ED922C0B51C00BE76A8 /* Knocked door sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */; };
+		677F0D4B22BCC783007BB9BC /* OpeningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F0D4A22BCC783007BB9BC /* OpeningScene.swift */; };
+		677F0D4D22BCC790007BB9BC /* OpeningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 677F0D4C22BCC790007BB9BC /* OpeningScene.sks */; };
+		677F0D4F22BCC802007BB9BC /* openingbedroom.sks in Resources */ = {isa = PBXBuildFile; fileRef = 677F0D4E22BCC802007BB9BC /* openingbedroom.sks */; };
+		677F0D5122BCC80F007BB9BC /* openingbedroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F0D5022BCC80F007BB9BC /* openingbedroom.swift */; };
 		930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930D15C522B8C6C500831E8C /* AppDelegate.swift */; };
 		930D15C822B8C6C500831E8C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 930D15C722B8C6C500831E8C /* GameScene.sks */; };
 		930D15CA22B8C6C500831E8C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 930D15C922B8C6C500831E8C /* Actions.sks */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Knocked door sound.wav"; sourceTree = "<group>"; };
+		677F0D4A22BCC783007BB9BC /* OpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScene.swift; sourceTree = "<group>"; };
+		677F0D4C22BCC790007BB9BC /* OpeningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OpeningScene.sks; sourceTree = "<group>"; };
+		677F0D4E22BCC802007BB9BC /* openingbedroom.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = openingbedroom.sks; sourceTree = "<group>"; };
+		677F0D5022BCC80F007BB9BC /* openingbedroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = openingbedroom.swift; sourceTree = "<group>"; };
 		930D15C222B8C6C500831E8C /* Blackpage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackpage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930D15C522B8C6C500831E8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		930D15C722B8C6C500831E8C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -80,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		677F0D4922BCC711007BB9BC /* Original Swift */ = {
+			isa = PBXGroup;
+			children = (
+				930D15C722B8C6C500831E8C /* GameScene.sks */,
+				930D15C922B8C6C500831E8C /* Actions.sks */,
+				930D15CB22B8C6C500831E8C /* GameScene.swift */,
+			);
+			path = "Original Swift";
+			sourceTree = "<group>";
+		};
 		930D15B922B8C6C500831E8C = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +123,18 @@
 		930D15C422B8C6C500831E8C /* Blackpage */ = {
 			isa = PBXGroup;
 			children = (
+				67392ED822C0B51C00BE76A8 /* Knocked door sound.wav */,
 				930D15C522B8C6C500831E8C /* AppDelegate.swift */,
-				930D15C722B8C6C500831E8C /* GameScene.sks */,
-				930D15C922B8C6C500831E8C /* Actions.sks */,
-				930D15CB22B8C6C500831E8C /* GameScene.swift */,
 				930D15CD22B8C6C500831E8C /* GameViewController.swift */,
+				677F0D4922BCC711007BB9BC /* Original Swift */,
 				930D15CF22B8C6C500831E8C /* Main.storyboard */,
 				930D15D222B8C6C600831E8C /* Assets.xcassets */,
 				930D15D422B8C6C600831E8C /* LaunchScreen.storyboard */,
 				930D15D722B8C6C600831E8C /* Info.plist */,
+				677F0D4C22BCC790007BB9BC /* OpeningScene.sks */,
+				677F0D4A22BCC783007BB9BC /* OpeningScene.swift */,
+				677F0D4E22BCC802007BB9BC /* openingbedroom.sks */,
+				677F0D5022BCC80F007BB9BC /* openingbedroom.swift */,
 			);
 			path = Blackpage;
 			sourceTree = "<group>";
@@ -240,8 +263,11 @@
 			files = (
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
 				930D15C822B8C6C500831E8C /* GameScene.sks in Resources */,
+				677F0D4F22BCC802007BB9BC /* openingbedroom.sks in Resources */,
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
+				677F0D4D22BCC790007BB9BC /* OpeningScene.sks in Resources */,
+				67392ED922C0B51C00BE76A8 /* Knocked door sound.wav in Resources */,
 				930D15CA22B8C6C500831E8C /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,9 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677F0D4B22BCC783007BB9BC /* OpeningScene.swift in Sources */,
 				930D15CC22B8C6C500831E8C /* GameScene.swift in Sources */,
 				930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */,
 				930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */,
+				677F0D5122BCC80F007BB9BC /* openingbedroom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,15 +473,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85879C62RU;
+				DEVELOPMENT_TEAM = 62VFPQ289V;
 				INFOPLIST_FILE = Blackpage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xenoire.Blackpage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -463,15 +492,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 85879C62RU;
+				DEVELOPMENT_TEAM = 62VFPQ289V;
 				INFOPLIST_FILE = Blackpage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xenoire.Blackpage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
