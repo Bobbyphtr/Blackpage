@@ -100,6 +100,7 @@ class SplashScreen: SKScene {
       for touch in touches {
             let touchLocation : CGPoint = touch.location(in: self)
 <<<<<<< HEAD
+<<<<<<< HEAD
             if !isButtonPressed {
                 if startButton?.contains(touchLocation) ?? false {
                     isButtonPressed = true
@@ -112,6 +113,10 @@ class SplashScreen: SKScene {
             if startButton?.contains(touchLocation) ?? false {
                 //self.scene?.view?.presentScene(SKScene.init(fileNamed: "OpeningScene")!, transition: SKTransition.fade(withDuration: 3.0))
 >>>>>>> parent of fe44e06... Merge remote-tracking branch 'origin/master'
+=======
+            if startButton?.contains(touchLocation) ?? false {
+                //self.scene?.view?.presentScene(SKScene.init(fileNamed: "OpeningScene")!, transition: SKTransition.fade(withDuration: 3.0))
+>>>>>>> parent of 18972c9... Merge branch 'Bobby-backdoorEnding'
             }
 
         }
