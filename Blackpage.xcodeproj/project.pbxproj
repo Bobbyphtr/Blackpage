@@ -422,11 +422,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				930D15D122B8C6C500831E8C /* Main.storyboard in Resources */,
-<<<<<<< HEAD
 				930D15C822B8C6C500831E8C /* GameScene.sks in Resources */,
 				677F0D4F22BCC802007BB9BC /* openingbedroom.sks in Resources */,
-=======
->>>>>>> parent of 49b9312... Merge branch 'Bobby-backdoorEnding'
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */,
 				E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */,
