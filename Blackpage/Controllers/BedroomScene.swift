@@ -46,9 +46,14 @@ class BedroomScene: SKScene, ChangeSceneToStairsDelegate {
     override func sceneDidLoad() {
         
         self.lastUpdateTime = 0
-        
+        fadeInBgSound()
     }
     
+    let ambienceSound = SKAudioNode(fileNamed: "bg_sound.mp3")
+    
+    func fadeInBgSound() -> Void{
+        self.run(SKAction.repeatForever(SKAction.playSoundFileNamed("bg_sound.mp3", waitForCompletion: true)))
+    }
     
     override func didMove(to view: SKView) {
         
