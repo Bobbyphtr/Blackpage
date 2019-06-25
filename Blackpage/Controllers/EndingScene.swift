@@ -64,6 +64,12 @@ class EndingScene: SKScene {
     }
     
     func backToSplashScreen(){
-        
+        if let scene = SplashScreen(fileNamed: "SplashScreen") {
+            // Set the scale mode to scale to fit the window
+            scene.scaleMode = .aspectFill
+            
+            // Present the scene
+            self.view?.presentScene(scene)
+        }
     }
 }
