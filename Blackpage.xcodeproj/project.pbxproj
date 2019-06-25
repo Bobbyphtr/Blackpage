@@ -42,6 +42,7 @@
 		E380491822C1DB7200FD52D0 /* AnakBungkuk.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380491722C1DB7200FD52D0 /* AnakBungkuk.swift */; };
 		E380491A22C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380491922C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift */; };
 		E380491C22C1E35700FD52D0 /* footstep_effect.wav in Resources */ = {isa = PBXBuildFile; fileRef = E380491B22C1E35700FD52D0 /* footstep_effect.wav */; };
+		E380491E22C1FE5600FD52D0 /* ChangeSceneToEndingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380491D22C1FE5600FD52D0 /* ChangeSceneToEndingDelegate.swift */; };
 		E3CB8ABF22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */; };
 		E3CB8AC122C088CD0049DBE8 /* StairScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8AC022C088CD0049DBE8 /* StairScene.swift */; };
 		E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3CB8AC222C088E40049DBE8 /* StairScene.sks */; };
@@ -127,6 +128,7 @@
 		E380491722C1DB7200FD52D0 /* AnakBungkuk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnakBungkuk.swift; sourceTree = "<group>"; };
 		E380491922C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeStateToBungkuklDelegate.swift; sourceTree = "<group>"; };
 		E380491B22C1E35700FD52D0 /* footstep_effect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = footstep_effect.wav; sourceTree = "<group>"; };
+		E380491D22C1FE5600FD52D0 /* ChangeSceneToEndingDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToEndingDelegate.swift; sourceTree = "<group>"; };
 		E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToKitchenDelegate.swift; sourceTree = "<group>"; };
 		E3CB8AC022C088CD0049DBE8 /* StairScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene.swift; sourceTree = "<group>"; };
 		E3CB8AC222C088E40049DBE8 /* StairScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene.sks; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */,
 				E380491122C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift */,
 				E380491922C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift */,
+				E380491D22C1FE5600FD52D0 /* ChangeSceneToEndingDelegate.swift */,
 			);
 			path = ChangeSceneDelegate;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				E3E43EB022BE85B700665671 /* ChildrenPhysicsDetection.swift in Sources */,
 				55FC76C122C0F0FE006C7EFE /* FrontDoor.swift in Sources */,
 				E3E43E9422BCD0D600665671 /* PhysicsDetection.swift in Sources */,
+				E380491E22C1FE5600FD52D0 /* ChangeSceneToEndingDelegate.swift in Sources */,
 				E3E43E8A22BCD0A000665671 /* PlayerControlComponent.swift in Sources */,
 				E3E43E9522BCD0D600665671 /* SceneTwo.swift in Sources */,
 				677F0D4B22BCC783007BB9BC /* OpeningScene.swift in Sources */,

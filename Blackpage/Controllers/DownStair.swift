@@ -9,7 +9,27 @@
 import SpriteKit
 import GameplayKit
 
-class DownStair: SKScene, ChangeSceneToFrontDoorDelegate {
+class DownStair: SKScene, ChangeSceneToFrontDoorDelegate, ChangeSceneToEndingDelegate {
+
+    
+    func changeSceneToEnding() {
+        
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = EndingScene(fileNamed: "EndingScene") {
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFill
+                
+                // Present the scene
+                self.view?.presentScene(scene)
+            }
+            
+            self.view?.ignoresSiblingOrder = true
+            
+            self.view?.showsFPS = false
+            self.view?.showsNodeCount = false
+        
+    }
+    
     
     func changeSceneToFrontDoor() {
         if let scene = GKScene(fileNamed: "FrontDoor") {
@@ -73,6 +93,7 @@ class DownStair: SKScene, ChangeSceneToFrontDoorDelegate {
                     
                     children_node?.setUpStateMachine(scene: self, mNode: player!)
                     children_node?.changeSceneToFrontDoor = self
+                    children_node?.changeSceneToEnding = self
                     
                     // memasukkan logika gerak (state)
                     //            (thePlayer as! CharacterNode).setUpStateMachine()

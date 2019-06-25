@@ -8,6 +8,7 @@ struct ColliderTypeChildren {
     static let CHILDREN_DOOR_LEFT: UInt32 = 0x1 << 3 //8
     static let DOWN_STAIR_DOOR_LEFT: UInt32 = 0x1 << 4 //16
     static let FRONT_DOOR_LEFT: UInt32 = 0x1 << 5 //32
+    static let DOWN_STAIR_RIGHT: UInt32 = 0x1 << 6 //64
 }
 
 
@@ -76,6 +77,14 @@ class ChildrenPhysicsDetection: NSObject, SKPhysicsContactDelegate {
                 player.changeSceneToBungkuk?.changeStateToBungkuk()
             }else if let player = contact.bodyB.node as? ChildrenNode {
                 player.changeSceneToBungkuk?.changeStateToBungkuk()
+            }
+        }
+        
+        if collision == ColliderTypeChildren.CHILDREN | ColliderTypeChildren.DOWN_STAIR_RIGHT {
+            if let player = contact.bodyA.node as? ChildrenNode {
+                player.changeSceneToEnding?.changeSceneToEnding()
+            }else if let player = contact.bodyB.node as? ChildrenNode {
+                player.changeSceneToEnding?.changeSceneToEnding()
             }
         }
  
