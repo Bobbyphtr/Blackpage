@@ -7,17 +7,20 @@ class AnimationComponent: GKComponent {
     
     var idleAnimation:SKAction?
     var walkAnimation:SKAction?
+    var walkSound: SKAction?
     
     override init() {
         super.init()
         idleAnimation = SKAction(named: "Idle")
         walkAnimation = SKAction(named: "Walk")
+        walkSound = SKAction(named: "walk_sound")
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         idleAnimation = SKAction(named: "Idle")
         walkAnimation = SKAction(named: "Walk")
+        walkSound = SKAction(named: "walk_sound")
         
     }
     
@@ -35,6 +38,7 @@ class AnimationComponent: GKComponent {
                 if(cNode?.left)! || (cNode?.right)! {
                     if(cNode?.action(forKey: "Walk") == nil){
                         cNode?.removeAllActions()
+                        cNode?.run(walkSound!, withKey: "walk_sound")
                         cNode?.run(walkAnimation!, withKey: "Walk")
                     }
                 }else {

@@ -20,6 +20,7 @@ class ChildrenNode: SKSpriteNode {
     
     var changeSceneToStairs: ChangeSceneToStairsDelegate?
     var changeSceneToFrontDoor: ChangeSceneToFrontDoorDelegate?
+    var changeSceneToBungkuk: ChangeStateToBungkukDelegate?
     
     var grounded = false
     var landed = false
@@ -48,7 +49,6 @@ class ChildrenNode: SKSpriteNode {
         //entering the state
         stateMachine?.enter(ChildrenState.self)
     }
-    
     
 }
 
