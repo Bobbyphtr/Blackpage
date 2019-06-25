@@ -9,16 +9,13 @@
 import SpriteKit
 import GameplayKit
 
-class StairScene: SKScene, ChangeSceneToKitchenDelegate {
+class DownStair: SKScene, ChangeSceneToFrontDoorDelegate {
     
-    
-    
-    
-    func changeSceneToKitchen() {
-        if let scene = GKScene(fileNamed: "KitchenScene") {
+    func changeSceneToFrontDoor() {
+        if let scene = GKScene(fileNamed: "FrontDoor") {
             
             // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! KitchenScene? {
+            if let sceneNode = scene.rootNode as! FrontDoor? {
                 
                 // Copy gameplay related content over to the scene
                 sceneNode.entities = scene.entities
@@ -41,8 +38,9 @@ class StairScene: SKScene, ChangeSceneToKitchenDelegate {
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
-    var physicsDelegate = PhysicsDetection()
+    var physicsDelegate = ChildrenPhysicsDetection()
     var player: CharacterNode?
+    var children_node: ChildrenNode?
     
     
     private var lastUpdateTime : TimeInterval = 0
@@ -53,25 +51,43 @@ class StairScene: SKScene, ChangeSceneToKitchenDelegate {
         
     }
     
+    
     override func didMove(to view: SKView) {
         
         //jika ada childnode(entity?) "Player", jalankan fungsi setupcontrols dari playercontrolcomponent.
-    
         
         
-        if let thePlayer = childNode(withName: "Mom"){
-            
-            
-            player = thePlayer as? CharacterNode
-            if(player != nil) {
-                player?.setUpStateMachine(scene: self)
-                player?.changeSceneToKitchen = self
-            }
-            
-            // memasukkan logika gerak (state)
-            //            (thePlayer as! CharacterNode).setUpStateMachine()
-            if let pcComponent = thePlayer.entity?.component(ofType: PlayerControlComponent.self){
-                pcComponent.setupControls(camera: camera!, scene: self)
+        
+        
+        if let theChildren = childNode(withName: "Children") {
+            children_node = theChildren as? ChildrenNode
+            if(children_node != nil) {
+                
+                if let thePlayer = childNode(withName: "Mom"){
+                    
+                    player = thePlayer as? CharacterNode
+                    if(player != nil) {
+                        player?.setUpStateMachine(scene: self)
+                    }
+                    
+                    
+                    children_node?.setUpStateMachine(scene: self, mNode: player!)
+                    children_node?.changeSceneToFrontDoor = self
+                    
+                    // memasukkan logika gerak (state)
+                    //            (thePlayer as! CharacterNode).setUpStateMachine()
+                    if let pcComponent = thePlayer.entity?.component(ofType: PlayerControlComponent.self){
+                        pcComponent.setupControls(camera: camera!, scene: self)
+                        pcComponent.setupChildren(node: children_node)
+                    }
+                    
+                    if let cComponent = theChildren.entity?.component(ofType: ChildrenTouchedComponent.self){
+                        cComponent.setupControls(camera: camera!, scene: self)
+                    }
+                    
+                    
+                }
+                
             }
         }
         
@@ -104,6 +120,5 @@ class StairScene: SKScene, ChangeSceneToKitchenDelegate {
         
         self.lastUpdateTime = currentTime
     }
-    
 }
 

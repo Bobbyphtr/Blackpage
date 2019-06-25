@@ -36,11 +36,6 @@ class ChildrenState: GKState {
         
         if cNode.touched {
             
-//            print("test")
-            
-            if(cNode.left) {
-                print("left clicked")
-            }
             
             if mNode.left {
                 cNode.xScale = -1.0
@@ -54,9 +49,7 @@ class ChildrenState: GKState {
             }
             
             
-            cNode.position.x = cNode.position.x + cNode.hSpeed * 0.3
-            
-            print("child: \(cNode.position.x), speed: \(cNode.hSpeed)")
+            cNode.position.x = cNode.position.x + cNode.hSpeed * 0.45
             
         }
         

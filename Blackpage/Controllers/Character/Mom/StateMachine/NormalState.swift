@@ -50,7 +50,6 @@ class NormalState: GKState {
         
         cNode.position.x = cNode.position.x + cNode.hSpeed
         
-        print("normal: \(cNode.position.x), speed: \(cNode.hSpeed)")
     }
     
     func approach(start: CGFloat, end: CGFloat, shift: CGFloat) -> CGFloat {

@@ -9,13 +9,16 @@
 import SpriteKit
 import GameplayKit
 
-class KitchenScene: SKScene, ChangeSceneToStairsDelegate {
+class StairWithChild: SKScene {
     
-    func changeSceneToStairs() {
-        if let scene = GKScene(fileNamed: "StairWithChild") {
+    
+    
+    
+    func changeSceneToDownStair() {
+        if let scene = GKScene(fileNamed: "DownStair") {
             
             // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! StairWithChild? {
+            if let sceneNode = scene.rootNode as! DownStair? {
                 
                 // Copy gameplay related content over to the scene
                 sceneNode.entities = scene.entities
@@ -29,6 +32,7 @@ class KitchenScene: SKScene, ChangeSceneToStairsDelegate {
                     view.presentScene(sceneNode)
                     
                     view.ignoresSiblingOrder = true
+                    
                 }
             }
         }
@@ -37,7 +41,7 @@ class KitchenScene: SKScene, ChangeSceneToStairsDelegate {
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
-    var physicsDelegate = ChildrenPhysicsDetection()
+     var physicsDelegate = ChildrenPhysicsDetection()
     var player: CharacterNode?
     var children_node: ChildrenNode?
     
@@ -49,13 +53,17 @@ class KitchenScene: SKScene, ChangeSceneToStairsDelegate {
         self.lastUpdateTime = 0
         
     }
-    
+    var tanggaTouch = SKSpriteNode()
     
     override func didMove(to view: SKView) {
         
         //jika ada childnode(entity?) "Player", jalankan fungsi setupcontrols dari playercontrolcomponent.
         
-        
+        tanggaTouch = SKSpriteNode(imageNamed: "panahBawah")
+        tanggaTouch.position = CGPoint.init(x: -30, y: 30)
+        tanggaTouch.size = CGSize.init(width: 60, height: 60)
+        tanggaTouch.zPosition = 1
+        self.addChild(tanggaTouch)
         
         
         if let theChildren = childNode(withName: "Children") {
@@ -63,27 +71,25 @@ class KitchenScene: SKScene, ChangeSceneToStairsDelegate {
             if(children_node != nil) {
                 
                 if let thePlayer = childNode(withName: "Mom"){
-                
+                    
                     player = thePlayer as? CharacterNode
                     if(player != nil) {
                         player?.setUpStateMachine(scene: self)
-                        player?.changeSceneToStairs = self
+//                        player?.changeSceneToKitchen = self
                     }
                     
                     
                     children_node?.setUpStateMachine(scene: self, mNode: player!)
-                    children_node?.changeSceneToStairs = self
+//                    children_node?.changeSceneToStairs = self
                     
                     // memasukkan logika gerak (state)
                     //            (thePlayer as! CharacterNode).setUpStateMachine()
                     if let pcComponent = thePlayer.entity?.component(ofType: PlayerControlComponent.self){
-                        print("mom mantabs")
                         pcComponent.setupControls(camera: camera!, scene: self)
                         pcComponent.setupChildren(node: children_node)
                     }
                     
                     if let cComponent = theChildren.entity?.component(ofType: ChildrenTouchedComponent.self){
-                        print("mantabs")
                         cComponent.setupControls(camera: camera!, scene: self)
                     }
                     
@@ -121,6 +127,41 @@ class KitchenScene: SKScene, ChangeSceneToStairsDelegate {
         }
         
         self.lastUpdateTime = currentTime
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        for touch in touches {
+            let touchLocation:CGPoint = touch.location(in: self)
+            if tanggaTouch.contains(touchLocation){
+                
+                if let scene = GKScene(fileNamed: "DownStair") {
+                    
+                    // Get the SKScene from the loaded GKScene
+                    if let sceneNode = scene.rootNode as! DownStair? {
+                        
+                        // Copy gameplay related content over to the scene
+                        sceneNode.entities = scene.entities
+                        sceneNode.graphs = scene.graphs
+                        
+                        // Set the scale mode to scale to fit the window
+                        sceneNode.scaleMode = .aspectFill
+                        
+                        // Present the scene
+                        if let view = self.view {
+                            view.presentScene(sceneNode, transition: SKTransition.fade(withDuration: 2.0))
+                            run(SKAction.playSoundFileNamed("step_stair.mp3", waitForCompletion: false))
+                            
+                            view.ignoresSiblingOrder = true
+                            
+
+                        }
+                    }
+                }
+                
+            }
+        }
+        
     }
 }
 

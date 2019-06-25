@@ -141,6 +141,26 @@ class SplashScreen: SKScene {
     }
     
     func changeScene(){
-        print("Change Scene")
-    }
+        if let scene = GKScene(fileNamed: "BedroomScene") {
+            
+            // Get the SKScene from the loaded GKScene
+            if let sceneNode = scene.rootNode as! BedroomScene? {
+                
+                // Copy gameplay related content over to the scene
+                sceneNode.entities = scene.entities
+                sceneNode.graphs = scene.graphs
+                
+                // Set the scale mode to scale to fit the window
+                sceneNode.scaleMode = .aspectFill
+                
+                // Present the scene
+                if let view = self.view {
+                    view.presentScene(sceneNode)
+                    
+                    view.ignoresSiblingOrder = true
+
+                }
+            }
+        }
+    } 
 }

@@ -33,6 +33,11 @@
 		939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 939B432E22BA4AE90059C54D /* bg_sound.mp3 */; };
 		93F6B3D822B8D69A00959C99 /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 93F6B3D722B8D69A00959C99 /* SplashScreen.sks */; };
 		93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 93FC312122C0C5B300D3C92D /* step_stair.mp3 */; };
+		E380490A22C1180D00FD52D0 /* StairWithChild.sks in Resources */ = {isa = PBXBuildFile; fileRef = E380490922C1180D00FD52D0 /* StairWithChild.sks */; };
+		E380490C22C1181F00FD52D0 /* StairWithChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380490B22C1181F00FD52D0 /* StairWithChild.swift */; };
+		E380490E22C1B71800FD52D0 /* DownStair.sks in Resources */ = {isa = PBXBuildFile; fileRef = E380490D22C1B71800FD52D0 /* DownStair.sks */; };
+		E380491022C1B8C000FD52D0 /* DownStair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380490F22C1B8C000FD52D0 /* DownStair.swift */; };
+		E380491222C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380491122C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift */; };
 		E3CB8ABF22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */; };
 		E3CB8AC122C088CD0049DBE8 /* StairScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8AC022C088CD0049DBE8 /* StairScene.swift */; };
 		E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3CB8AC222C088E40049DBE8 /* StairScene.sks */; };
@@ -109,6 +114,11 @@
 		939B432E22BA4AE90059C54D /* bg_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg_sound.mp3; sourceTree = "<group>"; };
 		93F6B3D722B8D69A00959C99 /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
 		93FC312122C0C5B300D3C92D /* step_stair.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = step_stair.mp3; sourceTree = "<group>"; };
+		E380490922C1180D00FD52D0 /* StairWithChild.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairWithChild.sks; sourceTree = "<group>"; };
+		E380490B22C1181F00FD52D0 /* StairWithChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairWithChild.swift; sourceTree = "<group>"; };
+		E380490D22C1B71800FD52D0 /* DownStair.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DownStair.sks; sourceTree = "<group>"; };
+		E380490F22C1B8C000FD52D0 /* DownStair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownStair.swift; sourceTree = "<group>"; };
+		E380491122C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToFrontDoorDelegate.swift; sourceTree = "<group>"; };
 		E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToKitchenDelegate.swift; sourceTree = "<group>"; };
 		E3CB8AC022C088CD0049DBE8 /* StairScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene.swift; sourceTree = "<group>"; };
 		E3CB8AC222C088E40049DBE8 /* StairScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene.sks; sourceTree = "<group>"; };
@@ -242,6 +252,8 @@
 				E3CB8AC222C088E40049DBE8 /* StairScene.sks */,
 				55CEE96C22C0B78400A65F2A /* StairScene2.sks */,
 				55FC76BE22C0F0EE006C7EFE /* FrontDoor.sks */,
+				E380490922C1180D00FD52D0 /* StairWithChild.sks */,
+				E380490D22C1B71800FD52D0 /* DownStair.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -250,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				9330A51F22BCE64300363FFE /* Character */,
-				9330A51E22BCE61900363FFE /* Delegates */,
+				9330A51E22BCE61900363FFE /* ChangeSceneDelegate */,
 				938B903722C0F53900650EC3 /* EndingScene.swift */,
 				E3E43E8C22BCD0D500665671 /* TouchControlInputNode.swift */,
 				55FC76C022C0F0FE006C7EFE /* FrontDoor.swift */,
@@ -261,17 +273,20 @@
 				E3E43EA922BE72AF00665671 /* KitchenScene.swift */,
 				938B902E22C0E9F900650EC3 /* SplashScreen.swift */,
 				938B903F22C0F84D00650EC3 /* Backdoor.swift */,
+				E380490B22C1181F00FD52D0 /* StairWithChild.swift */,
+				E380490F22C1B8C000FD52D0 /* DownStair.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		9330A51E22BCE61900363FFE /* Delegates */ = {
+		9330A51E22BCE61900363FFE /* ChangeSceneDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				E3E43EA522BCD8E900665671 /* ChangeSceneToStairsDelegate.swift */,
 				E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */,
+				E380491122C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift */,
 			);
-			path = Delegates;
+			path = ChangeSceneDelegate;
 			sourceTree = "<group>";
 		};
 		9330A51F22BCE64300363FFE /* Character */ = {
@@ -279,36 +294,50 @@
 			children = (
 				E3E43EB222BE8A7000665671 /* Children */,
 				E3E43EB122BE8A6A00665671 /* Mom */,
-				E3E43E8022BCD0A000665671 /* Components */,
-				E3E43E8422BCD0A000665671 /* StateMachine */,
-				E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */,
 			);
 			path = Character;
 			sourceTree = "<group>";
 		};
-		E3E43E8022BCD0A000665671 /* Components */ = {
+		E380490522C112AB00FD52D0 /* StateMachine */ = {
 			isa = PBXGroup;
 			children = (
-				E3E43E8222BCD0A000665671 /* AnimationComponent.swift */,
-				E3E43E8322BCD0A000665671 /* PlayerControlComponent.swift */,
+				E3E43E8522BCD0A000665671 /* NormalState.swift */,
+			);
+			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		E380490622C112B600FD52D0 /* StateMachine */ = {
+			isa = PBXGroup;
+			children = (
+				E3E43EAD22BE84AA00665671 /* ChildrenState.swift */,
+			);
+			path = StateMachine;
+			sourceTree = "<group>";
+		};
+		E380490722C112E000FD52D0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
 				E3E43EB322BE98EE00665671 /* ChildrenTouchedComponent.swift */,
 				E3E43EB522BEA05600665671 /* ChildrenAnimationComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		E3E43E8422BCD0A000665671 /* StateMachine */ = {
+		E380490822C112E800FD52D0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				E3E43E8522BCD0A000665671 /* NormalState.swift */,
-				E3E43EAD22BE84AA00665671 /* ChildrenState.swift */,
+				E3E43E8222BCD0A000665671 /* AnimationComponent.swift */,
+				E3E43E8322BCD0A000665671 /* PlayerControlComponent.swift */,
+				E3E43E8F22BCD0D600665671 /* ControlInputDelegate.swift */,
 			);
-			path = StateMachine;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		E3E43EB122BE8A6A00665671 /* Mom */ = {
 			isa = PBXGroup;
 			children = (
+				E380490822C112E800FD52D0 /* Components */,
+				E380490522C112AB00FD52D0 /* StateMachine */,
 				E3E43E9022BCD0D600665671 /* CharacterNode.swift */,
 				E3E43E8D22BCD0D600665671 /* PhysicsDetection.swift */,
 				E3E43E7E22BCD0A000665671 /* PlayerActions.sks */,
@@ -319,6 +348,8 @@
 		E3E43EB222BE8A7000665671 /* Children */ = {
 			isa = PBXGroup;
 			children = (
+				E380490722C112E000FD52D0 /* Components */,
+				E380490622C112B600FD52D0 /* StateMachine */,
 				E3E43EAB22BE846400665671 /* ChildrenNode.swift */,
 				E3E43EAF22BE85B700665671 /* ChildrenPhysicsDetection.swift */,
 				E3CB8AC622C0B6490049DBE8 /* ChildrenActions.sks */,
@@ -436,10 +467,12 @@
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */,
 				E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */,
+				E380490A22C1180D00FD52D0 /* StairWithChild.sks in Resources */,
 				E3E43EA322BCD27A00665671 /* BedroomScene.sks in Resources */,
 				E3CB8AC722C0B6490049DBE8 /* ChildrenActions.sks in Resources */,
 				939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */,
 				55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */,
+				E380490E22C1B71800FD52D0 /* DownStair.sks in Resources */,
 				E3E43E9922BCD0D600665671 /* SceneTwo.sks in Resources */,
 				930D15D622B8C6C600831E8C /* LaunchScreen.storyboard in Resources */,
 				55FC76BF22C0F0EE006C7EFE /* FrontDoor.sks in Resources */,
@@ -478,9 +511,12 @@
 				E3E43E9722BCD0D600665671 /* CharacterNode.swift in Sources */,
 				E3E43EAC22BE846400665671 /* ChildrenNode.swift in Sources */,
 				55CEE96F22C0B79900A65F2A /* StairScene2.swift in Sources */,
+				E380491022C1B8C000FD52D0 /* DownStair.swift in Sources */,
 				E3E43EB622BEA05600665671 /* ChildrenAnimationComponent.swift in Sources */,
+				E380491222C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift in Sources */,
 				E3CB8AC122C088CD0049DBE8 /* StairScene.swift in Sources */,
 				E3E43E9322BCD0D600665671 /* TouchControlInputNode.swift in Sources */,
+				E380490C22C1181F00FD52D0 /* StairWithChild.swift in Sources */,
 				E3E43EA622BCD8E900665671 /* ChangeSceneToStairsDelegate.swift in Sources */,
 				E3CB8ABF22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift in Sources */,
 				E3E43EB422BE98EE00665671 /* ChildrenTouchedComponent.swift in Sources */,

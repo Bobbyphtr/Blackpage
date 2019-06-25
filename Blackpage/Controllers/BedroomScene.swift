@@ -29,10 +29,6 @@ class BedroomScene: SKScene, ChangeSceneToStairsDelegate {
                     view.presentScene(sceneNode)
                     
                     view.ignoresSiblingOrder = true
-                    
-                    view.showsFPS = true
-                    view.showsPhysics = true
-                    view.showsNodeCount = true
                 }
             }
         }

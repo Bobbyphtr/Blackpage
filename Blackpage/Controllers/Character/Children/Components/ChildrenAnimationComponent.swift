@@ -34,8 +34,6 @@ class ChildrenAnimationComponent: GKComponent {
             
             if (cNode?.grounded)! {
                 
-                print("childground")
-                
                 if(cNode?.left)! || (cNode?.right)! {
                     if(cNode?.action(forKey: "anak_walk") == nil){
                         cNode?.removeAllActions()
