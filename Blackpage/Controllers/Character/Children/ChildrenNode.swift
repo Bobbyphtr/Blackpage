@@ -21,6 +21,7 @@ class ChildrenNode: SKSpriteNode {
     var changeSceneToStairs: ChangeSceneToStairsDelegate?
     var changeSceneToFrontDoor: ChangeSceneToFrontDoorDelegate?
     var changeSceneToBungkuk: ChangeStateToBungkukDelegate?
+    var changeSceneToEnding: ChangeSceneToEndingDelegate?
     
     var grounded = false
     var landed = false
