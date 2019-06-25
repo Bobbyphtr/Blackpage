@@ -9,13 +9,13 @@
 import SpriteKit
 import GameplayKit
 
-class FrontDoor: SKScene, ChangeSceneToStairsDelegate {
+class FrontDoor: SKScene, ChangeStateToBungkukDelegate {
     
-    func changeSceneToStairs() {
-        if let scene = GKScene(fileNamed: "StairWithChild") {
+    func changeStateToBungkuk() {
+        if let scene = GKScene(fileNamed: "AnakBungkuk") {
             
             // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! StairWithChild? {
+            if let sceneNode = scene.rootNode as! AnakBungkuk? {
                 
                 // Copy gameplay related content over to the scene
                 sceneNode.entities = scene.entities
@@ -68,12 +68,11 @@ class FrontDoor: SKScene, ChangeSceneToStairsDelegate {
                     player = thePlayer as? CharacterNode
                     if(player != nil) {
                         player?.setUpStateMachine(scene: self)
-                        player?.changeSceneToStairs = self
                     }
                     
                     
                     children_node?.setUpStateMachine(scene: self, mNode: player!)
-                    children_node?.changeSceneToStairs = self
+                    children_node?.changeSceneToBungkuk = self
                     
                     // memasukkan logika gerak (state)
                     //            (thePlayer as! CharacterNode).setUpStateMachine()

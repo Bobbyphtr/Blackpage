@@ -38,6 +38,10 @@
 		E380490E22C1B71800FD52D0 /* DownStair.sks in Resources */ = {isa = PBXBuildFile; fileRef = E380490D22C1B71800FD52D0 /* DownStair.sks */; };
 		E380491022C1B8C000FD52D0 /* DownStair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380490F22C1B8C000FD52D0 /* DownStair.swift */; };
 		E380491222C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380491122C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift */; };
+		E380491422C1CDD600FD52D0 /* AnakBungkuk.sks in Resources */ = {isa = PBXBuildFile; fileRef = E380491322C1CDD600FD52D0 /* AnakBungkuk.sks */; };
+		E380491822C1DB7200FD52D0 /* AnakBungkuk.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380491722C1DB7200FD52D0 /* AnakBungkuk.swift */; };
+		E380491A22C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E380491922C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift */; };
+		E380491C22C1E35700FD52D0 /* footstep_effect.wav in Resources */ = {isa = PBXBuildFile; fileRef = E380491B22C1E35700FD52D0 /* footstep_effect.wav */; };
 		E3CB8ABF22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */; };
 		E3CB8AC122C088CD0049DBE8 /* StairScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CB8AC022C088CD0049DBE8 /* StairScene.swift */; };
 		E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3CB8AC222C088E40049DBE8 /* StairScene.sks */; };
@@ -119,6 +123,10 @@
 		E380490D22C1B71800FD52D0 /* DownStair.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DownStair.sks; sourceTree = "<group>"; };
 		E380490F22C1B8C000FD52D0 /* DownStair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownStair.swift; sourceTree = "<group>"; };
 		E380491122C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToFrontDoorDelegate.swift; sourceTree = "<group>"; };
+		E380491322C1CDD600FD52D0 /* AnakBungkuk.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = AnakBungkuk.sks; sourceTree = "<group>"; };
+		E380491722C1DB7200FD52D0 /* AnakBungkuk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnakBungkuk.swift; sourceTree = "<group>"; };
+		E380491922C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeStateToBungkuklDelegate.swift; sourceTree = "<group>"; };
+		E380491B22C1E35700FD52D0 /* footstep_effect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = footstep_effect.wav; sourceTree = "<group>"; };
 		E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSceneToKitchenDelegate.swift; sourceTree = "<group>"; };
 		E3CB8AC022C088CD0049DBE8 /* StairScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StairScene.swift; sourceTree = "<group>"; };
 		E3CB8AC222C088E40049DBE8 /* StairScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StairScene.sks; sourceTree = "<group>"; };
@@ -232,6 +240,7 @@
 		930D15F922B8CBB800831E8C /* sound */ = {
 			isa = PBXGroup;
 			children = (
+				E380491B22C1E35700FD52D0 /* footstep_effect.wav */,
 				938B903022C0EA6700650EC3 /* epic_button_pressed.mp3 */,
 				93FC312122C0C5B300D3C92D /* step_stair.mp3 */,
 				930D15FA22B8CBED00831E8C /* horror_ambience.mp3 */,
@@ -254,6 +263,7 @@
 				55FC76BE22C0F0EE006C7EFE /* FrontDoor.sks */,
 				E380490922C1180D00FD52D0 /* StairWithChild.sks */,
 				E380490D22C1B71800FD52D0 /* DownStair.sks */,
+				E380491322C1CDD600FD52D0 /* AnakBungkuk.sks */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -275,6 +285,7 @@
 				938B903F22C0F84D00650EC3 /* Backdoor.swift */,
 				E380490B22C1181F00FD52D0 /* StairWithChild.swift */,
 				E380490F22C1B8C000FD52D0 /* DownStair.swift */,
+				E380491722C1DB7200FD52D0 /* AnakBungkuk.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +296,7 @@
 				E3E43EA522BCD8E900665671 /* ChangeSceneToStairsDelegate.swift */,
 				E3CB8ABE22C087E30049DBE8 /* ChangeSceneToKitchenDelegate.swift */,
 				E380491122C1BE0A00FD52D0 /* ChangeSceneToFrontDoorDelegate.swift */,
+				E380491922C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift */,
 			);
 			path = ChangeSceneDelegate;
 			sourceTree = "<group>";
@@ -467,8 +479,10 @@
 				930D15D322B8C6C600831E8C /* Assets.xcassets in Resources */,
 				93FC312222C0C5B300D3C92D /* step_stair.mp3 in Resources */,
 				E3CB8AC322C088E40049DBE8 /* StairScene.sks in Resources */,
+				E380491C22C1E35700FD52D0 /* footstep_effect.wav in Resources */,
 				E380490A22C1180D00FD52D0 /* StairWithChild.sks in Resources */,
 				E3E43EA322BCD27A00665671 /* BedroomScene.sks in Resources */,
+				E380491422C1CDD600FD52D0 /* AnakBungkuk.sks in Resources */,
 				E3CB8AC722C0B6490049DBE8 /* ChildrenActions.sks in Resources */,
 				939B432F22BA4AE90059C54D /* bg_sound.mp3 in Resources */,
 				55CEE96D22C0B78400A65F2A /* StairScene2.sks in Resources */,
@@ -530,6 +544,7 @@
 				938B904022C0F84D00650EC3 /* Backdoor.swift in Sources */,
 				930D15CE22B8C6C500831E8C /* GameViewController.swift in Sources */,
 				E3E43EAA22BE72AF00665671 /* KitchenScene.swift in Sources */,
+				E380491A22C1DF9C00FD52D0 /* ChangeStateToBungkuklDelegate.swift in Sources */,
 				E3E43E9F22BCD1B200665671 /* BedroomScene.swift in Sources */,
 				938B902F22C0E9F900650EC3 /* SplashScreen.swift in Sources */,
 				E3E43EAE22BE84AA00665671 /* ChildrenState.swift in Sources */,
@@ -537,6 +552,7 @@
 				E3E43E8B22BCD0A000665671 /* NormalState.swift in Sources */,
 				930D15C622B8C6C500831E8C /* AppDelegate.swift in Sources */,
 				E3E43E9622BCD0D600665671 /* ControlInputDelegate.swift in Sources */,
+				E380491822C1DB7200FD52D0 /* AnakBungkuk.swift in Sources */,
 				677F0D5122BCC80F007BB9BC /* openingbedroom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

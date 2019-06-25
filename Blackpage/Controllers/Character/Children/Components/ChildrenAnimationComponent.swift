@@ -18,10 +18,10 @@ class ChildrenAnimationComponent: GKComponent {
         super.init(coder: aDecoder)
         idleAnimation = SKAction(named: "anak_idle")
         walkAnimation = SKAction(named: "anak_walk")
-        
     }
     
     override func update(deltaTime seconds: TimeInterval) {
+        
         if cNode == nil {
             if let nodeComponent = self.entity?.component(ofType: GKSKNodeComponent.self){
                 cNode = nodeComponent.node as? ChildrenNode
